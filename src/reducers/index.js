@@ -1,15 +1,12 @@
 import { combineReducers } from 'redux';
 import reducer_test from './reducer_test.js';
+import datas from './datas.json';
+
 // penser à importer les reducers;
-export const initState = {
-    names: [{ id: 1, name: "Eloïse" },
-            { id: 2, name: "Alice" },
-            { id: 3, name: "Toto" },
-    ],
-}
+export const initState = { activities: datas }
 
 const rootReducer = combineReducers({
-    names: reducer_test,
+    activities: reducer_test,
     // cléSouhaitée : reducerSouhaité,
     // cléSouhaitée : reducerSouhaité,
 });
