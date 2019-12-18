@@ -69,11 +69,11 @@ const NewActivity = (form, dispatch) => {
                                 <Label for="activity_duration" sm={2}>Durée</Label>
                                 <Col sm={10}>
                                     <Input type="select" name="activity_duration" id="activity_duration">
-                                        <option>1h</option>
-                                        <option>2h</option>
-                                        <option>3h</option>
-                                        <option>4h</option>
-                                        <option>5h</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
                                     </Input>
                                 </Col>
                             </FormGroup>
