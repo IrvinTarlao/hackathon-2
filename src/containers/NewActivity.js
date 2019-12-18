@@ -1,9 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import '../App.css';
 import { Col, Button, Form, FormGroup, Label, Input, CustomInput } from 'reactstrap';
 
-const NewActivity = (form, dispatch) => {
+const NewActivity = () => {
 
     const submitForm = (event) => {
         event.preventDefault()
@@ -158,8 +157,4 @@ const NewActivity = (form, dispatch) => {
     )
 }
 
-const mapStateToProps = state => ({
-    form: state.newActivForm
-})
-
-export default connect(mapStateToProps)(NewActivity)
+export default NewActivity

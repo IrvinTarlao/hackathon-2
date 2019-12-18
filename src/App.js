@@ -14,8 +14,8 @@ function App() {
           <Route exact path="/" component={LandingPage}></Route>
           {/* <Route path="/search" component={Search}></Route>
           <Route path="/activity" component={Activity}></Route>
-          <Route path="/cart" component={Cart}></Route>
-          <Route path="/newactivity" component={NewActivity}></Route> */} */}
+          <Route path="/cart" component={Cart}></Route> */}
+          <Route path="/newactivity" component={NewActivity}></Route> */}
         </Switch> 
      </HashRouter>
     </div>
