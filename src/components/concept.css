@@ -1,0 +1,29 @@
+.concept_button{
+    margin-left: 40vw;
+}
+
+.concept_first_img{
+    display: block;
+    margin: 4em auto;
+}
+
+.concept_second_img{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.display-3{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.lead{
+    margin: 2em 0;
+}
+
+.concept_jumb{
+    margin-bottom: 0 !important;
+}
