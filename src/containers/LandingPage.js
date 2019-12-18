@@ -108,13 +108,12 @@ class LandingPage extends Component {
                 <p>
                   Vous avez un talent particulier pour la couture, la
                   programmation, l'ébénisterie, la peinture, la pirogravure sur
-                  palette ? Vous souhaitez proposer un atelier pour les
-                  enfants, avec ou sans leurs parents ? En voiture Simone !{" "}
+                  palette ? Vous souhaitez proposer un atelier pour les enfants,
+                  avec ou sans leurs parents ? En voiture Simone !{" "}
                 </p>
                 <Button>Proposez</Button>
               </Col>
-              <Col sm="12" md="6">
-              </Col>
+              <Col sm="12" md="6"></Col>
             </Row>
           </Container>
         </div>
