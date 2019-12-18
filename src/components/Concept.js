@@ -1,4 +1,6 @@
 import React from 'react';
+import { Jumbotron, Button } from 'reactstrap';
+import './concept.css'
 
 export default class Concept extends React.Component {
     constructor(props){
@@ -8,9 +10,18 @@ export default class Concept extends React.Component {
 
     render(){
         return(
-            <>
-                
-            </>
+            <div>
+                <Jumbotron>
+                    <h4 className="display-3">Notre mission, vous faire partager plus de moments en famille !</h4>
+                    <p className="lead">Metuentes igitur idem latrones Lycaoniam magna parte campestrem cum se inpares nostris fore congressione stataria documentis frequentibus scirent, tramitibus deviis petivere Pamphyliam diu quidem intactam sed timore populationum et caedium, milite per omnia diffuso propinqua, magnis undique praesidiis conmunitam.
+                    Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit.
+                    Thalassius vero ea tempestate praefectus praetorio praesens ipse quoque adrogantis ingenii, considerans incitationem eius ad multorum augeri discrimina, non maturitate vel consiliis mitigabat, ut aliquotiens celsae potestates iras principum molliverunt, sed adversando iurgandoque cum parum congrueret, eum ad rabiem potius evibrabat, Augustum actus eius exaggerando creberrime docens, idque, incertum qua mente, ne lateret adfectans. quibus mox Caesar acrius efferatus, velut contumaciae quoddam vexillum altius erigens, sine respectu salutis alienae vel suae ad vertenda opposita instar rapidi fluminis irrevocabili impetu ferebatur.</p>
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <p className="lead">
+                    <Button color="primary" className="concept_button">Accéder aux activités disponibles</Button>
+                    </p>
+                </Jumbotron>
+            </div>
         )
     }
 }

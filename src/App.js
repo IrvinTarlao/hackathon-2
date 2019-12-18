@@ -5,6 +5,7 @@ import {HashRouter, Switch, Route } from 'react-router-dom';
 // import Activity from './containers/Home';
 // import Cart from './containers/Home';
 // import NewActivity from './containers/Home';
+import Concept from './components/Concept'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/activity" component={Activity}></Route>
             <Route path="/cart" component={Cart}></Route>
             <Route path="/newactivity" component={NewActivity}></Route> */}
+            <Route path="/concept" component={Concept}></Route>
         </Switch>
       </HashRouter>
     </div>
