@@ -9,7 +9,27 @@ const NewActivity = () => {
         let data = Array.from(new FormData(event.target).entries())
         // dispatch({type: 'SUBMIT', id: Array.from(data.entries())[0]})
         console.log(data)
-        
+
+        const newEntry = {
+            "id": 17,
+            "first_name": data.filter(item => item[0] === 'first_name')[0][1],
+            "last_name": data.filter(item => item[0] === 'last_name')[0][1],
+            "avatar": null,
+            "longitude": "4.8269787",
+            "latitude": "45.7463242",
+            "location": data.filter(item => item[0] === 'location')[0][1],
+            "activity_title": data.filter(item => item[0] === 'activity_title')[0][1],
+            "activity_picture": null,
+            "activity_duration": data.filter(item => item[0] === 'activity_duration')[0][1],
+            "activity_age_min": data.filter(item => item[0] === 'activity_age_min')[0][1],
+            "activity_age_max": data.filter(item => item[0] === 'activity_age_max')[0][1],
+            "category": "Art",
+            "description": data.filter(item => item[0] === 'description')[0][1],
+            "price": data.filter(item => item[0] === 'price')[0][1],
+            "dispo": "LMMJVS"
+        }
+        console.log(newEntry)
+
     }
 
     return (
@@ -91,7 +111,7 @@ const NewActivity = () => {
                             <FormGroup row>
                                 <Label for="activity_age_max" sm={2}>Age maximum</Label>
                                 <Col sm={10}>
-                                    <Input type="select" name="activity_duration" id="activity_age_max">
+                                    <Input type="select" name="activity_age_max" id="activity_age_max">
                                         <option>3</option>
                                         <option>4</option>
                                         <option>5</option>
@@ -104,11 +124,11 @@ const NewActivity = () => {
                                 <Label for="category" sm={2}>Categorie</Label>
                                 <div>
                                     <Col sm={10}>
-                                        <CustomInput type="checkbox" id="category1" label="Art" />
-                                        <CustomInput type="checkbox" id="category2" label="Bricolage" />
-                                        <CustomInput type="checkbox" id="category3" label="Cosmetique" />
-                                        <CustomInput type="checkbox" id="category4" label="Recyclage" />
-                                        <CustomInput type="checkbox" id="category5" label="Technologie" />
+                                        <CustomInput type="checkbox" name="art" id="category1" label="Art" />
+                                        <CustomInput type="checkbox" name="bricolage" id="category2" label="Bricolage" />
+                                        <CustomInput type="checkbox" name="cosmetique" id="category3" label="Cosmetique" />
+                                        <CustomInput type="checkbox" name="recyclage" id="category4" label="Recyclage" />
+                                        <CustomInput type="checkbox" name="technologie" id="category5" label="Technologie" />
                                     </Col>
                                 </div>
                             </FormGroup>
