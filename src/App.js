@@ -1,6 +1,6 @@
-import React from 'react';
-import {HashRouter, Switch, Route } from 'react-router-dom';
-// import Home from './containers/Home';
+import React from "react";
+import { HashRouter, Switch, Route } from "react-router-dom";
+import LandingPage from "./containers/LandingPage";
 // import Search from './containers/Home';
 // import Activity from './containers/Home';
 // import Cart from './containers/Home';
@@ -10,7 +10,7 @@ import Concept from './components/Concept'
 function App() {
   return (
     <div className="App">
-     <HashRouter>
+      <HashRouter>
         <Switch>
             {/* <Route exact path="/" component={Home}></Route>
             <Route path="/search" component={Search}></Route>

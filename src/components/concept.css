@@ -2,3 +2,17 @@
     margin-left: 40vw;
 }
 
+.concept_first_img{
+    display: block;
+    margin: 4em auto;
+}
+
+.display-3{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.lead{
+    margin: 2em 0;
+}
+
