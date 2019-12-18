@@ -12,10 +12,23 @@ import {
   CardSubtitle,
   Button
 } from "reactstrap";
+import { connect } from 'react-redux'
 
 class LandingPage extends Component {
-  render() {
-    return (
+    constructor(props){
+        super(props);
+    }
+    
+    
+    
+    render() {
+
+        const activitiesLp = 
+        [this.props.activities[Math.floor(Math.random() * this.props.activities.length)],
+        this.props.activities[Math.floor(Math.random() * this.props.activities.length)],
+        this.props.activities[Math.floor(Math.random() * this.props.activities.length)]]
+
+        return (
       <div className="landingPage">
         <div className="lpsection-home">
           <Container>
@@ -33,69 +46,34 @@ class LandingPage extends Component {
           <h2>Venez en prendre plein les mirettes</h2>
           <Container>
             <Row>
-              <Col xs="12" md="4">
-                <div className="card-item">
-                  <Card>
-                    <CardImg
-                      top
-                      width="100%"
-                      src="https://www.maman-plume.fr/wp-content/uploads/2019/04/shoot-7112-1080x720.jpg"
-                      alt="Card image cap"
-                    />
-                    <CardBody>
-                      <CardTitle>Activité</CardTitle>
-                      <CardSubtitle>Age - Ville - Catégorie</CardSubtitle>
-                      <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </CardText>
-                      <Button>En savoir plus</Button>
-                    </CardBody>
-                  </Card>
-                </div>
-              </Col>
-              <Col xs="12" md="4">
-                <div className="card-item">
-                  <Card>
-                    <CardImg
-                      top
-                      width="100%"
-                      src="https://www.maman-plume.fr/wp-content/uploads/2019/04/shoot-7112-1080x720.jpg"
-                      alt="Card image cap"
-                    />
-                    <CardBody>
-                      <CardTitle>Activité</CardTitle>
-                      <CardSubtitle>Age - Ville - Catégorie</CardSubtitle>
-                      <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </CardText>
-                      <Button>En savoir plus</Button>
-                    </CardBody>
-                  </Card>
-                </div>
-              </Col>
-              <Col xs="12" md="4">
-                <div className="card-item">
-                  <Card>
-                    <CardImg
-                      top
-                      width="100%"
-                      src="https://www.maman-plume.fr/wp-content/uploads/2019/04/shoot-7112-1080x720.jpg"
-                      alt="Card image cap"
-                    />
-                    <CardBody>
-                      <CardTitle>Activité</CardTitle>
-                      <CardSubtitle>Age - Ville - Catégorie</CardSubtitle>
-                      <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </CardText>
-                      <Button>En savoir plus</Button>
-                    </CardBody>
-                  </Card>
-                </div>
-              </Col>
+                {activitiesLp.map((activity, index) => 
+                     <Col xs="12" md="4" key={index}>
+                     <div className="card-item">
+                       <Card>
+                         <CardImg
+                           top
+                           width="100%"
+                           src={activity.avatar}
+                           alt={activity.title}
+                         />
+                         <CardBody>
+                           <CardTitle>{activity.activity_title}</CardTitle>
+                           <CardSubtitle>{activity.category}</CardSubtitle>
+                           <CardText>
+                           {activity.location} <br/>
+                           {activity.duration} heures <br/>
+                           {activity.activity_age_min} - {activity.activity_age_max} ans <br/>
+                           Prix : {activity.price} euros
+
+                           </CardText>
+                           <Button>En savoir plus</Button>
+                         </CardBody>
+                       </Card>
+                     </div>
+                   </Col>
+                    
+                    )}
+
             </Row>
           </Container>
         </div>
@@ -122,4 +100,8 @@ class LandingPage extends Component {
   }
 }
 
-export default LandingPage;
+function mapState (state) {
+    return { activities: state.activities }
+  }
+  
+  export default connect(mapState)(LandingPage)
