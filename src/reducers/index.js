@@ -1,4 +1,9 @@
 // penser à importer les reducers;
+export const initState = {  
+    // ici notre BD
+}
+
+
 
 import {combineReducers} from 'redux';
 
