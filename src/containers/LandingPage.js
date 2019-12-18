@@ -19,7 +19,7 @@ class LandingPage extends Component {
       <div className="landingPage">
         <div className="lpsection-home">
           <Container>
-            <div classname="lp-maintext-section">
+            <div className="lp-maintext-section">
               <h1>KidDo</h1>
               <h3>Mon cadeau ? </h3>
               <h3>C'est moi qui l'a fé !</h3>
