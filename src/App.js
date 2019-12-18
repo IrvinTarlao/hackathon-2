@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {HashRouter, Switch, Route } from 'react-router-dom';
+// import Home from './containers/Home';
+// import Search from './containers/Home';
+// import Activity from './containers/Home';
+// import Cart from './containers/Home';
+// import NewActivity from './containers/Home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <HashRouter>
+        <Switch>
+            {/* <Route exact path="/" component={Home}></Route>
+            <Route path="/search" component={Search}></Route>
+            <Route path="/activity" component={Activity}></Route>
+            <Route path="/cart" component={Cart}></Route>
+            <Route path="/newactivity" component={NewActivity}></Route> */}
+        </Switch>
+      </HashRouter>
     </div>
   );
 }
