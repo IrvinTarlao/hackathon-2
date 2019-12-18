@@ -19,20 +19,18 @@ class LandingPage extends Component {
       <div className="landingPage">
         <div className="lpsection-home">
           <Container>
-         
-              <div classname='lp-maintext-section'>
-                <h1>KidDo</h1>
-                <h3>Mon cadeau ? </h3>
-                <h3>C'est moi qui l'a fé !</h3>
-              </div>
-              <div>
-                <Button>Découvrir</Button>
-              </div>
-            
+            <div classname="lp-maintext-section">
+              <h1>KidDo</h1>
+              <h3>Mon cadeau ? </h3>
+              <h3>C'est moi qui l'a fé !</h3>
+            </div>
+            <div>
+              <Button>Découvrir</Button>
+            </div>
           </Container>
         </div>
         <div className="lpsection-examples">
-          <h2>Quelques exemples</h2>
+          <h2>Venez en prendre plein les mirettes</h2>
           <Container>
             <Row>
               <Col xs="12" md="4">
@@ -102,10 +100,23 @@ class LandingPage extends Component {
           </Container>
         </div>
 
-        <div className="lpsection">
-          <h1>KidDo</h1>
-          <h2>Tu veux un cadeau ?</h2>
-          <h2>Fais-le ! (connard.sse)</h2>
+        <div className="lpsection-proposez">
+          <Container>
+            <Row>
+              <Col sm="12" md="6">
+                <h2>Proposez votre activité</h2>
+                <p>
+                  Vous avez un talent particulier pour la couture, la
+                  programmation, l'ébénisterie, la peinture, la pirogravure sur
+                  palette ? Vous souhaitez proposer un atelier pour les
+                  enfants, avec ou sans leurs parents ? En voiture Simone !{" "}
+                </p>
+                <Button>Proposez</Button>
+              </Col>
+              <Col sm="12" md="6">
+              </Col>
+            </Row>
+          </Container>
         </div>
       </div>
     );
