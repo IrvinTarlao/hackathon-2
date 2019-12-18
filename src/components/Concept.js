@@ -12,8 +12,9 @@ export default class Concept extends React.Component {
     render(){
         return(
             <div>
-                <img className="concept_first_img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80"></img>
-                <Jumbotron>
+                {/* <img className="concept_first_img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80"></img> */}
+                <div className="concept_second_img"></div>
+                <Jumbotron className="concept_jumb">
                     <Container>
                     <h4 className="display-3">Notre mission, vous faire partager plus de moments en famille !</h4>
                     <p className="lead">Metuentes igitur idem latrones Lycaoniam magna parte campestrem cum se inpares nostris fore congressione stataria documentis frequentibus scirent, tramitibus deviis petivere Pamphyliam diu quidem intactam sed timore populationum et caedium, milite per omnia diffuso propinqua, magnis undique praesidiis conmunitam.
