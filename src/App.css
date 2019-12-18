@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.newActivityContainer{
+  width: 100%;
+}
+
+.newActivityID {
+  background-color: #cecece;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px;
+}
+
+.newActivityDescription {
+  background-color: #cecece;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px;
+}
