@@ -1,4 +1,45 @@
-.App {
+/* LANDING PAGE */
+
+.lpsection-home {
+  min-height: 100vh;
+  width:100vw;
+  text-align: center;
+  background-image:url("./img/lp-home.jpg");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5vh 5vw;
+  background-attachment: fixed;
+}
+
+.lpsection-home h1, h3{
+  color: beige;
+}
+
+.lpsection-examples {
+  width:100vw;
+  min-height: 100vh;
+  text-align: center;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5vh 5vw;
+}
+
+.lpsection-examples h2 {
+  text-align: center;
+  padding: 5vh 0;
+}
+
+.card-item {
+  padding: 5vh;
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +76,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
