@@ -10,11 +10,7 @@ import {
   CardBody,
   CardTitle,
   CardSubtitle,
-  Button,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText
+  Button
 } from "reactstrap";
 
 class LandingPage extends Component {
@@ -23,20 +19,16 @@ class LandingPage extends Component {
       <div className="landingPage">
         <div className="lpsection-home">
           <Container>
-            <Row>
-              <Col>
-                <InputGroup>
-                  <Input />
-                  <InputGroupAddon addonType="append">
-                    <InputGroupText>To the Right!</InputGroupText>
-                  </InputGroupAddon>
-                </InputGroup>
-              </Col>
-              <Col>
+         
+              <div classname='lp-maintext-section'>
                 <h1>KidDo</h1>
-                <h3>Mon cadeau ? C'est moi qui l'a fé !</h3>
-              </Col>
-            </Row>
+                <h3>Mon cadeau ? </h3>
+                <h3>C'est moi qui l'a fé !</h3>
+              </div>
+              <div>
+                <Button>Découvrir</Button>
+              </div>
+            
           </Container>
         </div>
         <div className="lpsection-examples">
@@ -106,8 +98,6 @@ class LandingPage extends Component {
                   </Card>
                 </div>
               </Col>
-
-
             </Row>
           </Container>
         </div>

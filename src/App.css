@@ -3,12 +3,12 @@
 .lpsection-home {
   min-height: 100vh;
   width:100vw;
-  text-align: center;
+  text-align: left;
   background-image:url("./img/lp-home.jpg");
   background-position: top;
   background-size: cover;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   padding: 5vh 5vw;
   background-attachment: fixed;
@@ -35,7 +35,7 @@
 }
 
 .card-item {
-  padding: 5vh;
+  padding: 5vh 0;
 }
 
 
