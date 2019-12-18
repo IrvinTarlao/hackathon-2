@@ -4,7 +4,7 @@ const NewActivity = () => {
 
     return(
         <div>
-
+            <p>Ca fonctionne</p>
         </div>
     )
 }
