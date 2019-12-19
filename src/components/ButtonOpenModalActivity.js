@@ -31,8 +31,10 @@ class ButtonOpenModal extends Component {
     closeModal=()=> {
         let {showModalActivity} = this.state;
         showModalActivity = false;
-        setTimeout(()=>this.setState({ showModalActivity }), 200)
+        setTimeout(()=>this.setState({ showModalActivity }), 2000)
     }
+
+    isAddCart=(isAdd)=>{}
 
     render(){
         
