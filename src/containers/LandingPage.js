@@ -44,7 +44,7 @@ class LandingPage extends Component {
             <Row>
               <Col>
                 <div className="lp-fond-txt">
-                  <h1>KidDo</h1>
+                  <h1 className='main-title'>KidDo</h1>
                   <h3>Mon cadeau ? </h3>
                   <h3>C'est moi qui l'a fé !</h3>
 
@@ -56,10 +56,10 @@ class LandingPage extends Component {
           </Container>
         </div>
         <div className="lpsection-examples">
-        <div className="lp-fond-txt">
-          <h2>Venez en prendre plein les mirettes</h2>
-          </div>
           <Container>
+        <div className="lp-fond-txt">
+        <h2 className="second-title">Venez en prendre plein les mirettes</h2>
+          </div>
             <Row>
               {activitiesLp.map((activity, index) => (
                 <Col xs="12" md="4" key={index}>
@@ -87,7 +87,7 @@ class LandingPage extends Component {
                           <FontAwesomeIcon icon={faHome} />
                           &nbsp;{activity.location} <br />
                           <FontAwesomeIcon icon={faClock} />
-                          &nbsp;{activity.activity_duration} heures <br />
+                          &nbsp;{activity.activity_duration} heure(s) <br />
                           <FontAwesomeIcon icon={faChild} />
                           &nbsp;{activity.activity_age_min} -{" "}
                           {activity.activity_age_max} ans <br />
@@ -109,7 +109,7 @@ class LandingPage extends Component {
             <Row>
               <Col sm="12" md="6">
                 <div className="lp-fond-txt">
-                  <h2>Proposez votre activité</h2>
+                  <h2 className="second-title">Proposez votre activité</h2>
                   <p>
                     Vous avez un talent particulier pour la couture, la
                     programmation, l'ébénisterie, la peinture, la pirogravure

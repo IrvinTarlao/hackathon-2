@@ -1,3 +1,22 @@
+/* GENERAL */
+.main-title{
+  font-size: 5em;
+  font-family: 'Lilita One', cursive;
+}
+
+.second-title{
+  font-size: 2.5em;
+  font-family: 'Lilita One', cursive;
+}
+
+.lp-fond-txt{
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2vh 2vw;
+  color: black;
+  border-radius: 5px;
+}
+
+
 /* LANDING PAGE */
 
 .lpsection-home {
@@ -13,6 +32,7 @@
   padding: 5vh 5vw;
   background-attachment: fixed;
 }
+
 
 
 .lpsection-examples {
@@ -53,12 +73,6 @@
   color: white;
 }
 
-.lp-fond-txt{
-  background-color: rgba(255, 255, 255, 0.4);
-  padding: 2vh 2vw;
-  color: black;
-  border-radius: 5px;
-}
 /* .App {
   text-align: center;
 }
