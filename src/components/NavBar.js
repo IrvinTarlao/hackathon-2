@@ -18,10 +18,10 @@ const Nav2 = (props) => {
 
   return (
     <div>
+        <Navbar className="nav" light expand="md" style={{backgroundColor:"transparent", position: "fixed", right:0, justifyContent:"flex-end", outline:"none", zIndex:5}}>
         <h1 className='main-title' style={{position:"fixed", fontSize: "3em", left:"15px", zIndex:1}}>
           <NavLink className="logo" to={"/"}>KidDo</NavLink>
         </h1>
-        <Navbar className="nav" light expand="md" style={{backgroundColor:"transparent", position: "fixed", right:0, justifyContent:"flex-end", outline:"none", zIndex:5}}>
         
         <NavbarToggler onClick={toggle} style={{border: "2px solid white", right:"0", backgroundColor:"#5BD2FF"}}/>
         <Collapse isOpen={isOpen} navbar>

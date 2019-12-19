@@ -31,6 +31,7 @@ class LandingPage extends Component {
 
 
   render() {
+
     const activitiesLp = [
       this.props.activities[
         Math.floor(Math.random() * this.props.activities.length)
@@ -46,11 +47,11 @@ class LandingPage extends Component {
     return (
       <div className="landingPage">
         <NavBar/>
-        <div className="lpsection-home">
-          <Container>
-            <Row>
-              <Col>
-                <div className="lp-fond-txt">
+        <div className="lpsection-home" key={Math.random()}>
+          <Container key={Math.random()}>
+            <Row key={Math.random()}>
+              <Col key={Math.random()}>
+                <div className="lp-fond-txt" key={Math.random()}>
                   <h1 className='main-title'>KidDo</h1>
                   <h3 className='second-title'>Mon cadeau ? </h3>
                   <h3 className='second-title'>C moa ki la fé !</h3>
@@ -58,39 +59,40 @@ class LandingPage extends Component {
                   <Button color="primary" size="lg" style={{marginTop: "2vh"}}><NavLink className="navlink" to={"/Search"}>Découvrir nos activités !</NavLink></Button>
                 </div>
               </Col>
-              <Col></Col>
+              <Col key={Math.random()}></Col>
             </Row>
           </Container>
         </div>
-        <div className="lpsection-examples">
-          <Container>
-        <div className="lp-fond-txt">
+        <div className="lpsection-examples" key={Math.random()}>
+          <Container key={Math.random()}>
+        <div className="lp-fond-txt" key={Math.random()}>
         <h2 className="second-title">Venez en prendre plein les mirettes</h2>
           </div>
-            <Row>
+            <Row key={Math.random()}>
               {activitiesLp.map((activity, index) => (
-                <Col xs="12" md="4" key={index}>
+                <Col xs="12" md="4" key={Math.random()}>
                   <div className="card-item">
-                    <Card>
+                    <Card key={Math.random()}>
                       <CardImg
+                         key={Math.random()}
                         top
                         width="100%"
                         src={activity.activity_picture}
                         alt={activity.title}
                       />
                       <CardBody>
-                        <CardTitle>
+                        <CardTitle key={Math.random()}>
                           <h4 className="card-title">{activity.activity_title}</h4>
                         </CardTitle>
 
-                        <CardSubtitle>
-                          {activity.category.map(cat=>(<span>
+                        <CardSubtitle key={Math.random()}>
+                          {activity.category.map(cat=>(<span key={Math.random()}>
                             <em>{cat}</em>
                             &nbsp;
                             </span>
                             ))}
                         </CardSubtitle>
-                        <CardText>
+                        <CardText key={Math.random()}>
                           <FontAwesomeIcon icon={faHome} />
                           &nbsp;{activity.location} <br />
                           <FontAwesomeIcon icon={faClock} />
@@ -111,11 +113,11 @@ class LandingPage extends Component {
           </Container>
         </div>
 
-        <div className="lpsection-proposez">
-          <Container>
-            <Row>
-              <Col sm="12" md="6">
-                <div className="lp-fond-txt">
+        <div className="lpsection-proposez" key={Math.random()}>
+          <Container key={Math.random()}>
+            <Row key={Math.random()}>
+              <Col sm="12" md="6" key={Math.random()}>
+                <div className="lp-fond-txt" key={Math.random()}>
                   <h2 className="second-title">Proposez votre activité</h2>
                   <p style={{marginTop:"2vh"}}>
                     Vous avez un talent particulier pour la couture, la
@@ -136,6 +138,7 @@ class LandingPage extends Component {
 }
 
 function mapState(state) {
+  console.log(state);    
   return { activities: state.activities };
 }
 
