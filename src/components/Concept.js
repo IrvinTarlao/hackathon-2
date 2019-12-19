@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Jumbotron, Button } from "reactstrap";
 import "./concept.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
 
 export default class Concept extends React.Component {
@@ -49,7 +49,8 @@ export default class Concept extends React.Component {
               content out within the larger container.
             </p>
             <p className="lead">
-              <Link to="/formulaireDeConnexion">Accéder aux activités</Link>
+            <Button color="primary" size="lg" style={{marginTop: "2vh"}}><NavLink className="navlink" to={"/Search"}>Découvrir nos activités !</NavLink></Button>
+
             </p>
           </Container>
         </Jumbotron>
