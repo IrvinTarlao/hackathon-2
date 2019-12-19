@@ -8,6 +8,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faChild } from "@fortawesome/free-solid-svg-icons";
 import { faCoins } from "@fortawesome/free-solid-svg-icons";
+import ButtonOpenModalActivity from '../components/ButtonOpenModalActivity'
 
 
 const Search = (props) => {
@@ -63,7 +64,8 @@ const Search = (props) => {
                   <td><FontAwesomeIcon icon={faChild} />&nbsp;{item.activity_age_min} - {item.activity_age_max}&nbsp;ans&nbsp;</td>
                   <td><FontAwesomeIcon icon={faCoins} />&nbsp;{item.price}&nbsp;euros</td>
                 </tr>
-                <Button className="p-1 m-1 float-right">En savoir plus</Button>
+                {/* <Button className="p-1 m-1 float-right">En savoir plus</Button> */}
+                <ButtonOpenModalActivity activity={item}/>
               </CardText>
             </CardBody>
           </Col>
