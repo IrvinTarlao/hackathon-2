@@ -45,10 +45,10 @@ class LandingPage extends Component {
               <Col>
                 <div className="lp-fond-txt">
                   <h1 className='main-title'>KidDo</h1>
-                  <h3>Mon cadeau ? </h3>
-                  <h3>C'est moi qui l'a fé !</h3>
+                  <h3 className='second-title'>Mon cadeau ? </h3>
+                  <h3 className='second-title'>C moa ki la fé !</h3>
 
-                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}>Découvrir</Button>
+                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}>Découvrir nos activités</Button>
                 </div>
               </Col>
               <Col></Col>
@@ -73,7 +73,7 @@ class LandingPage extends Component {
                       />
                       <CardBody>
                         <CardTitle>
-                          <h4>{activity.activity_title}</h4>
+                          <h4 className="card-title">{activity.activity_title}</h4>
                         </CardTitle>
 
                         <CardSubtitle>
@@ -110,7 +110,7 @@ class LandingPage extends Component {
               <Col sm="12" md="6">
                 <div className="lp-fond-txt">
                   <h2 className="second-title">Proposez votre activité</h2>
-                  <p>
+                  <p style={{marginTop:"2vh"}}>
                     Vous avez un talent particulier pour la couture, la
                     programmation, l'ébénisterie, la peinture, la pirogravure
                     sur palette ? Vous souhaitez proposer un atelier pour les
