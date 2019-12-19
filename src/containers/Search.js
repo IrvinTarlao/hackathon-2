@@ -9,6 +9,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faChild } from "@fortawesome/free-solid-svg-icons";
 import { faCoins } from "@fortawesome/free-solid-svg-icons";
+import ButtonOpenModalActivity from '../components/ButtonOpenModalActivity'
 
 
 const Search = (props) => {
@@ -16,6 +17,8 @@ const Search = (props) => {
   const { activities, filtre, dispatch } = props;
   const [search, setSearch] = useState('')
   const [ newFilter, setNewFilter ] = useState(activities.filter(item=>item.activity_title.includes(search)));
+  // const { activities, dispatch } = props;
+  // const [ newFilter, setNewFilter ] = useState(activities);
   
   const handleChange = (event) => {
     event.preventDefault()
@@ -33,27 +36,27 @@ const Search = (props) => {
               src={item.avatar}
               alt="Card image cap" />
           </Col>
-          <Col className="col-8" >
-            <CardBody className="p-0" >
-              <CardTitle  className="pt-2" ><h5>{item.activity_title}</h5></CardTitle>
-              <CardSubtitle className="p-0" ><h6>avec {item.first_name}</h6></CardSubtitle>
-              <CardText className="pb-2" ><br />
-                <em>{item.category}</em><br /><br />
-                <tbody >
-                  <tr >
-                    <td >
+          <Col className="col-8">
+            <CardBody className="p-0">
+              <CardTitle  className="pt-2"><h5>{item.activity_title}</h5></CardTitle>
+              <CardSubtitle className="p-0"><h6>avec {item.first_name}</h6></CardSubtitle>
+              <CardText className="pb-2">
+                <em>{item.category}</em><br />
+                <tbody>
+                  <tr>
+                    <td>
                       <FontAwesomeIcon icon={faHome} />&nbsp;{item.location}
                     </td>
-                    <td >
+                    <td>
                       <FontAwesomeIcon icon={faClock} />&nbsp;{item.activity_duration}&nbsp;heure{item.activity_duration > 1 && 's'}
                     </td>
                   </tr>
-                  <tr >
-                    <td ><FontAwesomeIcon icon={faChild} />&nbsp;{item.activity_age_min} - {item.activity_age_max}&nbsp;ans&nbsp;</td>
-                    <td ><FontAwesomeIcon icon={faCoins} />&nbsp;{item.price}&nbsp;euros</td>
+                  <tr>
+                    <td><FontAwesomeIcon icon={faChild} />&nbsp;{item.activity_age_min} - {item.activity_age_max}&nbsp;ans&nbsp;</td>
+                    <td><FontAwesomeIcon icon={faCoins} />&nbsp;{item.price}&nbsp;euros</td>
                   </tr>
                 </tbody>
-                <Button className="p-1 m-1 float-right">En savoir plus</Button>
+                <ButtonOpenModalActivity activity={item}/>
               </CardText>
             </CardBody>
           </Col>

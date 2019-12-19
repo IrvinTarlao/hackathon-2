@@ -20,13 +20,18 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faChild } from "@fortawesome/free-solid-svg-icons";
 import { faCoins } from "@fortawesome/free-solid-svg-icons";
+import ButtonOpenModalActivity from '../components/ButtonOpenModalActivity'
 
 class LandingPage extends Component {
   constructor(props) {
     super(props);
+    this.state = {}
   }
 
+
+
   render() {
+
     const activitiesLp = [
       this.props.activities[
         Math.floor(Math.random() * this.props.activities.length)
@@ -51,7 +56,7 @@ class LandingPage extends Component {
                   <h3 className='second-title'>Mon cadeau ? </h3>
                   <h3 className='second-title'>C moa ki la fé !</h3>
 
-                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}>Découvrir nos activités</Button>
+                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}><NavLink className="navlink" to={"/Search"}>Découvrir nos activités !</NavLink></Button>
                 </div>
               </Col>
               <Col key={Math.random()}></Col>
@@ -98,7 +103,7 @@ class LandingPage extends Component {
                           <FontAwesomeIcon icon={faCoins} />
                           &nbsp;{activity.price} euros
                         </CardText>
-                        <Button color="primary">En savoir plus</Button>
+                        <ButtonOpenModalActivity activity={activity}/>
                       </CardBody>
                     </Card>
                   </div>
@@ -133,6 +138,7 @@ class LandingPage extends Component {
 }
 
 function mapState(state) {
+  console.log(state);    
   return { activities: state.activities };
 }
 

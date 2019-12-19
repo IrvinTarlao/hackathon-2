@@ -1,0 +1,15 @@
+.button {
+    border-radius:5px;
+	background: #076bd9;
+    color:#f5f5f5;
+    margin: 25px auto;
+	font-family: 'Lilita One', cursive;
+	padding:10px 10px;
+    letter-spacing: .15rem;
+}
+
+.button:hover {
+	color:#292828;
+
+}
+

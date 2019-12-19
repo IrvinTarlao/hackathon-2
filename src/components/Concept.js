@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Jumbotron, Button } from 'reactstrap';
 import './concept.css'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import NavBar from './NavBar';
 
 export default class Concept extends React.Component {
@@ -25,7 +25,7 @@ export default class Concept extends React.Component {
                     Thalassius vero ea tempestate praefectus praetorio praesens ipse quoque adrogantis ingenii, considerans incitationem eius ad multorum augeri discrimina, non maturitate vel consiliis mitigabat, ut aliquotiens celsae potestates iras principum molliverunt, sed adversando iurgandoque cum parum congrueret, eum ad rabiem potius evibrabat, Augustum actus eius exaggerando creberrime docens, idque, incertum qua mente, ne lateret adfectans. quibus mox Caesar acrius efferatus, velut contumaciae quoddam vexillum altius erigens, sine respectu salutis alienae vel suae ad vertenda opposita instar rapidi fluminis irrevocabili impetu ferebatur.</p>
                     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
                     <p className="lead">
-                    <Link to="/formulaireDeConnexion">Accéder aux activités</Link>
+                    <NavLink to="/">Accéder aux activités</NavLink>
                     </p>
                     </Container>
                 </Jumbotron>
