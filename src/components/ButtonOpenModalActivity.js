@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import Modal from './Modal';
-import './buttonOpenModal.css'
+import ModalActivity from './ModalActivity';
+import './buttonOpenModalActivity.css'
 
 class ButtonOpenModal extends Component {
     constructor(props) {
         super(props);
         this.state= {
-            showModal: false,
+            showModalActivity: false,
             selectedActivity: {},
         };
     }
@@ -20,16 +20,16 @@ class ButtonOpenModal extends Component {
     }
 
     openModal=(e)=> {
-        let {showModal} = this.state;
+        let {showModalActivity} = this.state;
         e.preventDefault()
-        showModal = true;
-        this.setState({ showModal })
+        showModalActivity = true;
+        this.setState({ showModalActivity })
     }
 
     closeModal=()=> {
-        let {showModal} = this.state;
-        showModal = false;
-        setTimeout(()=>this.setState({ showModal }), 500)
+        let {showModalActivity} = this.state;
+        showModalActivity = false;
+        setTimeout(()=>this.setState({ showModalActivity }), 500)
     }
 
     render(){
@@ -37,7 +37,7 @@ class ButtonOpenModal extends Component {
         return(
             <div className="SectionContainer">
                 <button className="button" onClick={this.openModal}>En savoir plus</button>
-                <Modal showModal={this.state.showModal} closeModal={this.closeModal} activity={this.props.activity}/>
+                <ModalActivity showModalActivity={this.state.showModalActivity} closeModal={this.closeModal} activity={this.props.activity}/>
             </div>
         )
     }

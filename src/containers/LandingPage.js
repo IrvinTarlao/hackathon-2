@@ -12,7 +12,8 @@ import {
   CardSubtitle,
   Button
 } from "reactstrap";
-import ButtonOpenModal from '../components/ButtonOpenModal'
+import ButtonOpenModalActivity from '../components/ButtonOpenModalActivity'
+import ButtonModal from '../components/ButtonModal'
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -98,7 +99,7 @@ class LandingPage extends Component {
                           <FontAwesomeIcon icon={faCoins} />
                           &nbsp;{activity.price} euros
                         </CardText>
-                        <ButtonOpenModal activity={activity}/>
+                        <ButtonOpenModalActivity activity={activity}/>
                       </CardBody>
                     </Card>
                   </div>
@@ -127,6 +128,7 @@ class LandingPage extends Component {
             </Row>
           </Container>
         </div>
+        <ButtonModal />
       </div>
     );
   }
