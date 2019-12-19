@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Jumbotron, Button } from 'reactstrap';
 import './concept.css'
 import { Link } from "react-router-dom";
+import NavBar from './NavBar';
 
 export default class Concept extends React.Component {
     constructor(props){
@@ -11,7 +12,9 @@ export default class Concept extends React.Component {
 
     render(){
         return(
+            
             <div>
+                <NavBar/>
                 {/* <img className="concept_first_img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80"></img> */}
                 <div className="concept_second_img"></div>
                 <Jumbotron className="concept_jumb">
