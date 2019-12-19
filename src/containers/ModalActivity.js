@@ -77,7 +77,7 @@ class ModalActivity extends Component {
                                     </Jumbotron>
                                 </div>
                             </div>
-                            <Button color="primary" size="lg" style={{marginTop: "2vh"}} onClick={this.selectedActivityAndCloseModal}>Sélectionner cette activité</Button>
+                            <Button color="primary" size="lg" style={{marginTop: "2vh", bottom:"10vh", right:"15vw", fontSize:"1.2em"}} onClick={this.selectedActivityAndCloseModal}>Sélectionner cette activité</Button>
                         </div>
                         {this.state.isAddCart ? 
                             <div style={textIsAddStyle}>
