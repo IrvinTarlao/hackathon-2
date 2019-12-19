@@ -7,6 +7,7 @@ import Search2 from "./containers/Search2.js"
 // import Activity from './containers/Home';
 // import Cart from './containers/Home';
 // import NewActivity from './containers/Home';
+import Concept from './components/Concept'
 
 function App() {
   return (

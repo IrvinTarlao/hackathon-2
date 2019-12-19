@@ -8,14 +8,14 @@
     "latitude": "45.752073898715146",
     "location": "Lyon",
     "activity_title": "Réparer son vélo",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1470157673928-c566cc73cc00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80",
     "activity_duration": 2,
     "activity_age_min": 8,
     "activity_age_max": 14,
-    "category": "Recyclage",
+    "category": ["Recyclage"],
     "description": null,
     "price": 30,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 2,
@@ -26,14 +26,14 @@
     "latitude": "45.73961546958843",
     "location": "Bron",
     "activity_title": "Apprendre à coder un jeu",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 4,
     "activity_age_min": 12,
     "activity_age_max": 18,
-    "category": "Technologie",
+    "category": ["Technologie"],
     "description": null,
     "price": 50,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 3,
@@ -44,14 +44,14 @@
     "latitude": "45.746324200000046",
     "location": "Lyon",
     "activity_title": "Réparer une peluche",
-    "activity_picture": null,
+    "activity_picture":  "https://images.unsplash.com/photo-1574661570553-be40c85891e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80",
     "activity_duration": 2,
     "activity_age_min": 5,
     "activity_age_max": 8,
-    "category": "Recyclage",
-    "description": null,
+    "category": ["Recyclage"],
+    "description":null,
     "price": 20,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 4,
@@ -62,14 +62,14 @@
     "latitude": "45.77698241575689",
     "location": "Ecully",
     "activity_title": "Fabriquer un jouet en bois",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1541692641319-981cc79ee10a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 3,
     "activity_age_min": 6,
     "activity_age_max": 12,
-    "category": "Bricolage",
+    "category": ["Bricolage"],
     "description": null,
     "price": 50,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 5,
@@ -80,14 +80,14 @@
     "latitude": "45.75878113197653",
     "location": "Lyon",
     "activity_title": "Fabriquer une guitare",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 4,
     "activity_age_min": 8,
     "activity_age_max": 16,
-    "category": "Bricolage",
+    "category": ["Bricolage"],
     "description": null,
     "price": 60,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 6,
@@ -98,14 +98,14 @@
     "latitude": "45.73961546958847",
     "location": "Lyon",
     "activity_title": "Réparer un jouet électronique ",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1558171813-8e717211582b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 2,
     "activity_age_min": 10,
     "activity_age_max": 14,
-    "category": "Technologie, Recyclage",
+    "category": ["Technologie", "Recyclage"],
     "description": null,
     "price": 30,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 7,
@@ -116,14 +116,14 @@
     "latitude": "45.77794021354255",
     "location": "Lyon",
     "activity_title": "Peindre un tableau",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1461344577544-4e5dc9487184?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 3,
     "activity_age_min": 6,
     "activity_age_max": 12,
-    "category": "Art",
+    "category": ["Art"],
     "description": null,
     "price": 25,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 8,
@@ -134,14 +134,14 @@
     "latitude": "45.776982415756976",
     "location": "Lyon",
     "activity_title": "Recycler un vêtement",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1542757573-84ee8884b308?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 1,
     "activity_age_min": 8,
     "activity_age_max": 14,
-    "category": "Recyclage",
+    "category": ["Recyclage"],
     "description": null,
     "price": 15,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 9,
@@ -152,14 +152,14 @@
     "latitude": "45.778897994876374",
     "location": "Villeurbanne",
     "activity_title": "Créer son déguisement",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1466921583968-f07aa80c526e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 2,
     "activity_age_min": 4,
     "activity_age_max": 10,
-    "category": "Bricolage",
+    "category": ["Bricolage"],
     "description": null,
     "price": 20,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 10,
@@ -169,15 +169,15 @@
     "longitude": "4.820112244921916",
     "latitude": "45.79613524565125",
     "location": "Lyon",
-    "activity_title": "Fabriquer un bateau à hélices",
-    "activity_picture": null,
+    "activity_title": "Fabriquer un bateau",
+    "activity_picture": "https://images.unsplash.com/photo-1512834945397-dc15de857576?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80",
     "activity_duration": 3,
     "activity_age_min": 7,
     "activity_age_max": 12,
-    "category": "Bricolage",
+    "category": ["Bricolage"],
     "description": null,
     "price": 40,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 11,
@@ -188,14 +188,14 @@
     "latitude": "45.78751728655404",
     "location": "Villeurbanne",
     "activity_title": "Fabriquer des savons",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1546552768-9e3a94b38a59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 1,
     "activity_age_min": 6,
     "activity_age_max": 10,
-    "category": "Cosmétique",
+    "category": ["Cosmétique"],
     "description": null,
     "price": 25,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 12,
@@ -206,14 +206,14 @@
     "latitude": "45.75111565672654",
     "location": "Lyon",
     "activity_title": "Créer une bande dessinée",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1514329926535-7f6dbfbfb114?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 3,
     "activity_age_min": 8,
     "activity_age_max": 18,
-    "category": "Art",
+    "category": ["Art"],
     "description": null,
     "price": 40,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 13,
@@ -224,14 +224,14 @@
     "latitude": "45.73290593301209",
     "location": "Lyon",
     "activity_title": "Fabrique ton skate-board",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1536318431364-5cc762cfc8ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 2,
     "activity_age_min": 10,
     "activity_age_max": 16,
-    "category": "Bricolage",
+    "category": ["Bricolage"],
     "description": null,
     "price": 50,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 14,
@@ -242,14 +242,14 @@
     "latitude": "45.78464433739321",
     "location": "Villeurbanne",
     "activity_title": "Customiser un jouet",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 1,
     "activity_age_min": 4,
     "activity_age_max": 8,
-    "category": "Bricolage, Recyclage",
+    "category": ["Bricolage", "Recyclage"],
     "description": null,
     "price": 15,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 15,
@@ -260,14 +260,14 @@
     "latitude": "45.75015739828569",
     "location": "Vaulx-en-Velin",
     "activity_title": "Apprendre à imprimer en 3D",
-    "activity_picture": null,
+    "activity_picture": "https://images.unsplash.com/photo-1514063364532-5abd25e38290?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 2,
     "activity_age_min": 12,
     "activity_age_max": 18,
-    "category": "Technologie",
+    "category": ["Technologie"],
     "description": null,
     "price": 35,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 16,
@@ -277,15 +277,15 @@
     "longitude": "4.8269787",
     "latitude": "45.7463242",
     "location": "Lyon",
-    "activity_title": "Fabriquer un nerf avec des objets recylcables",
-    "activity_picture": null,
+    "activity_title": "Fabriquer un nerf avec des objets recyclables",
+    "activity_picture": "https://images.unsplash.com/photo-1574127157804-25a46105bde1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "activity_duration": 3,
     "activity_age_min": 14,
     "activity_age_max": 16,
-    "category": "Bricolage, Recyclage",
+    "category": ["Bricolage", "Recyclage"],
     "description": null,
     "price": 60,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 17,
@@ -296,13 +296,13 @@
     "latitude": "45.7463242",
     "location": "Lyon",
     "activity_title": "Apprendre à faire des blagues incomprises",
-    "activity_picture": null,
+    "activity_picture": "https://previews.123rf.com/images/zinkevych/zinkevych1501/zinkevych150100152/35367579-closeup-of-elderly-woman-shrugging-shoulders.jpg",
     "activity_duration": 1,
     "activity_age_min": 4,
     "activity_age_max": 14,
-    "category": "Art",
+    "category": ["Art"],
     "description": null,
     "price": 5,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   }
 ]

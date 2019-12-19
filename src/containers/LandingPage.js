@@ -13,91 +13,95 @@ import {
   Button
 } from "reactstrap";
 import NavBar from '../components/NavBar'
+import { connect } from "react-redux";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faChild } from "@fortawesome/free-solid-svg-icons";
+import { faCoins } from "@fortawesome/free-solid-svg-icons";
 
 class LandingPage extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const activitiesLp = [
+      this.props.activities[
+        Math.floor(Math.random() * this.props.activities.length)
+      ],
+      this.props.activities[
+        Math.floor(Math.random() * this.props.activities.length)
+      ],
+      this.props.activities[
+        Math.floor(Math.random() * this.props.activities.length)
+      ]
+    ];
+
     return (
       <div className="landingPage">
         <NavBar/>
         <div className="lpsection-home">
           <Container>
-            <div className="lp-maintext-section">
-              <h1>KidDo</h1>
-              <h3>Mon cadeau ? </h3>
-              <h3>C'est moi qui l'a fé !</h3>
-            </div>
-            <div>
-              <Button>Découvrir</Button>
-            </div>
+            <Row>
+              <Col>
+                <div className="lp-fond-txt">
+                  <h1 className='main-title'>KidDo</h1>
+                  <h3 className='second-title'>Mon cadeau ? </h3>
+                  <h3 className='second-title'>C moa ki la fé !</h3>
+
+                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}>Découvrir nos activités</Button>
+                </div>
+              </Col>
+              <Col></Col>
+            </Row>
           </Container>
         </div>
         <div className="lpsection-examples">
-          <h2>Venez en prendre plein les mirettes</h2>
           <Container>
+        <div className="lp-fond-txt">
+        <h2 className="second-title">Venez en prendre plein les mirettes</h2>
+          </div>
             <Row>
-              <Col xs="12" md="4">
-                <div className="card-item">
-                  <Card>
-                    <CardImg
-                      top
-                      width="100%"
-                      src="https://www.maman-plume.fr/wp-content/uploads/2019/04/shoot-7112-1080x720.jpg"
-                      alt="Card image cap"
-                    />
-                    <CardBody>
-                      <CardTitle>Activité</CardTitle>
-                      <CardSubtitle>Age - Ville - Catégorie</CardSubtitle>
-                      <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </CardText>
-                      <Button>En savoir plus</Button>
-                    </CardBody>
-                  </Card>
-                </div>
-              </Col>
-              <Col xs="12" md="4">
-                <div className="card-item">
-                  <Card>
-                    <CardImg
-                      top
-                      width="100%"
-                      src="https://www.maman-plume.fr/wp-content/uploads/2019/04/shoot-7112-1080x720.jpg"
-                      alt="Card image cap"
-                    />
-                    <CardBody>
-                      <CardTitle>Activité</CardTitle>
-                      <CardSubtitle>Age - Ville - Catégorie</CardSubtitle>
-                      <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </CardText>
-                      <Button>En savoir plus</Button>
-                    </CardBody>
-                  </Card>
-                </div>
-              </Col>
-              <Col xs="12" md="4">
-                <div className="card-item">
-                  <Card>
-                    <CardImg
-                      top
-                      width="100%"
-                      src="https://www.maman-plume.fr/wp-content/uploads/2019/04/shoot-7112-1080x720.jpg"
-                      alt="Card image cap"
-                    />
-                    <CardBody>
-                      <CardTitle>Activité</CardTitle>
-                      <CardSubtitle>Age - Ville - Catégorie</CardSubtitle>
-                      <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </CardText>
-                      <Button>En savoir plus</Button>
-                    </CardBody>
-                  </Card>
-                </div>
-              </Col>
+              {activitiesLp.map((activity, index) => (
+                <Col xs="12" md="4" key={index}>
+                  <div className="card-item">
+                    <Card>
+                      <CardImg
+                        top
+                        width="100%"
+                        src={activity.activity_picture}
+                        alt={activity.title}
+                      />
+                      <CardBody>
+                        <CardTitle>
+                          <h4 className="card-title">{activity.activity_title}</h4>
+                        </CardTitle>
+
+                        <CardSubtitle>
+                          {activity.category.map(cat=>(<span>
+                            <em>{cat}</em>
+                            &nbsp;
+                            </span>
+                            ))}
+                        </CardSubtitle>
+                        <CardText>
+                          <FontAwesomeIcon icon={faHome} />
+                          &nbsp;{activity.location} <br />
+                          <FontAwesomeIcon icon={faClock} />
+                          &nbsp;{activity.activity_duration} heure(s) <br />
+                          <FontAwesomeIcon icon={faChild} />
+                          &nbsp;{activity.activity_age_min} -{" "}
+                          {activity.activity_age_max} ans <br />
+                          <FontAwesomeIcon icon={faCoins} />
+                          &nbsp;{activity.price} euros
+                        </CardText>
+                        <Button color="primary">En savoir plus</Button>
+                      </CardBody>
+                    </Card>
+                  </div>
+                </Col>
+              ))}
             </Row>
           </Container>
         </div>
@@ -106,14 +110,16 @@ class LandingPage extends Component {
           <Container>
             <Row>
               <Col sm="12" md="6">
-                <h2>Proposez votre activité</h2>
-                <p>
-                  Vous avez un talent particulier pour la couture, la
-                  programmation, l'ébénisterie, la peinture, la pirogravure sur
-                  palette ? Vous souhaitez proposer un atelier pour les enfants,
-                  avec ou sans leurs parents ? En voiture Simone !{" "}
-                </p>
-                <Button>Proposez</Button>
+                <div className="lp-fond-txt">
+                  <h2 className="second-title">Proposez votre activité</h2>
+                  <p style={{marginTop:"2vh"}}>
+                    Vous avez un talent particulier pour la couture, la
+                    programmation, l'ébénisterie, la peinture, la pirogravure
+                    sur palette ? Vous souhaitez proposer un atelier pour les
+                    enfants, avec ou sans leurs parents ? {" "}
+                  </p>
+                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}>En voiture Simone !</Button>
+                </div>
               </Col>
               <Col sm="12" md="6"></Col>
             </Row>
@@ -124,4 +130,8 @@ class LandingPage extends Component {
   }
 }
 
-export default LandingPage;
+function mapState(state) {
+  return { activities: state.activities };
+}
+
+export default connect(mapState)(LandingPage);

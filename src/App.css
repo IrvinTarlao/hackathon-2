@@ -1,10 +1,33 @@
+/* GENERAL */
+.main-title{
+  font-size: 5em;
+  font-family: 'Lilita One', cursive;
+}
+
+.second-title{
+  font-size: 2.5em;
+  font-family: 'Lilita One', cursive;
+}
+.card-title{
+  font-size: 1.2em;
+  font-family: 'Lilita One', cursive;
+}
+
+.lp-fond-txt{
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2vh 2vw;
+  color: black;
+  border-radius: 5px;
+}
+
+
 /* LANDING PAGE */
 
 .lpsection-home {
   min-height: 100vh;
   width:100vw;
   text-align: left;
-  background-image:url("./img/lp-home.jpg");
+  background-image:url("./img/lp-section1.jpg");
   background-position: top;
   background-size: cover;
   display: flex;
@@ -14,9 +37,7 @@
   background-attachment: fixed;
 }
 
-.lpsection-home h1, h3{
-  color: beige;
-}
+
 
 .lpsection-examples {
   width:100vw;
@@ -34,13 +55,12 @@
 .lpsection-examples h2 {
   text-align: center;
   padding: 5vh 0;
+  color: black;
 }
 
 .card-item {
   padding: 5vh 0;
 }
-
-
 
 .lpsection-proposez {
   min-height: 100vh;
@@ -56,7 +76,6 @@
   background-attachment: fixed;
   color: white;
 }
-
 
 /* .App {
   text-align: center;
