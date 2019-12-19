@@ -12,6 +12,7 @@ import {
   CardSubtitle,
   Button
 } from "reactstrap";
+import ButtonOpenModal from '../components/ButtonOpenModal'
 
 class LandingPage extends Component {
   render() {
@@ -49,7 +50,7 @@ class LandingPage extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </CardText>
-                      <Button>En savoir plus</Button>
+                      <ButtonOpenModal />
                     </CardBody>
                   </Card>
                 </div>
@@ -70,7 +71,7 @@ class LandingPage extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </CardText>
-                      <Button>En savoir plus</Button>
+                      <ButtonOpenModal />
                     </CardBody>
                   </Card>
                 </div>
@@ -91,7 +92,7 @@ class LandingPage extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </CardText>
-                      <Button>En savoir plus</Button>
+                      <ButtonOpenModal />
                     </CardBody>
                   </Card>
                 </div>
