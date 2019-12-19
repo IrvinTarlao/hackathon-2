@@ -56,7 +56,9 @@ class LandingPage extends Component {
           </Container>
         </div>
         <div className="lpsection-examples">
+        <div className="lp-fond-txt">
           <h2>Venez en prendre plein les mirettes</h2>
+          </div>
           <Container>
             <Row>
               {activitiesLp.map((activity, index) => (
@@ -66,7 +68,7 @@ class LandingPage extends Component {
                       <CardImg
                         top
                         width="100%"
-                        src={activity.avatar}
+                        src={activity.activity_picture}
                         alt={activity.title}
                       />
                       <CardBody>
