@@ -4,11 +4,35 @@ import { Col, Button, Form, FormGroup, Label, Input, CustomInput } from 'reactst
 
 const NewActivity = () => {
 
+
     const submitForm = (event) => {
         event.preventDefault()
         let data = Array.from(new FormData(event.target).entries())
         // dispatch({type: 'SUBMIT', id: Array.from(data.entries())[0]})
         console.log(data)
+
+        //Récupération de catégories séléctionnées
+        const cat = ['art', 'bricolage', 'cosmetique', 'recyclage', 'technologie']
+
+        let filteredActivitys = []
+
+        for (let i = 0; i < cat.length; i++) {
+            if (data.find(item => item[0] === cat[i]) !== undefined) {
+                filteredActivitys.push(data.find(item => item[0] === cat[i])[0])
+            }
+        }
+
+        //Récupération de jours séléctionnés
+
+        const day = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']
+
+        let filteredDays = []
+
+        for (let i = 0; i < day.length; i++) {
+            if (data.find(item => item[0] === day[i]) !== undefined) {
+                filteredDays.push(data.find(item => item[0] === day[i])[0])
+            }
+        }
 
         const newEntry = {
             "id": 17,
@@ -23,10 +47,10 @@ const NewActivity = () => {
             "activity_duration": data.filter(item => item[0] === 'activity_duration')[0][1],
             "activity_age_min": data.filter(item => item[0] === 'activity_age_min')[0][1],
             "activity_age_max": data.filter(item => item[0] === 'activity_age_max')[0][1],
-            "category": "Art",
+            "category": filteredActivitys,
             "description": data.filter(item => item[0] === 'description')[0][1],
             "price": data.filter(item => item[0] === 'price')[0][1],
-            "dispo": "LMMJVS"
+            "dispo": filteredDays
         }
         console.log(newEntry)
 
@@ -148,13 +172,13 @@ const NewActivity = () => {
                                 <Label for="dispo" sm={2}>Disponibilité</Label>
                                 <div>
                                     <Col sm={10}>
-                                        <CustomInput type="checkbox" id="dispo1" label="Lundi" />
-                                        <CustomInput type="checkbox" id="dispo2" label="Mardi" />
-                                        <CustomInput type="checkbox" id="dispo3" label="Mercredi" />
-                                        <CustomInput type="checkbox" id="dispo4" label="Jeudi" />
-                                        <CustomInput type="checkbox" id="dispo5" label="Vendredi" />
-                                        <CustomInput type="checkbox" id="dispo6" label="Samedi" />
-                                        <CustomInput type="checkbox" id="dispo7" label="Dimanche" />
+                                        <CustomInput type="checkbox" name='lundi' id="dispo1" label="Lundi" />
+                                        <CustomInput type="checkbox" name='mardi' id="dispo2" label="Mardi" />
+                                        <CustomInput type="checkbox" name='mercredi' id="dispo3" label="Mercredi" />
+                                        <CustomInput type="checkbox" name='jeudi' id="dispo4" label="Jeudi" />
+                                        <CustomInput type="checkbox" name='vendredi' id="dispo5" label="Vendredi" />
+                                        <CustomInput type="checkbox" name='samedi' id="dispo6" label="Samedi" />
+                                        <CustomInput type="checkbox" name='dimanche' id="dispo7" label="Dimanche" />
                                     </Col>
                                 </div>
                             </FormGroup>
