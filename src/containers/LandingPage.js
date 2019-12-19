@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 import {
   Container,
@@ -12,6 +13,7 @@ import {
   CardSubtitle,
   Button
 } from "reactstrap";
+import NavBar from '../components/NavBar'
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -39,16 +41,17 @@ class LandingPage extends Component {
 
     return (
       <div className="landingPage">
+        <NavBar/>
         <div className="lpsection-home">
           <Container>
             <Row>
               <Col>
                 <div className="lp-fond-txt">
-                  <h1>KidDo</h1>
-                  <h3>Mon cadeau ? </h3>
-                  <h3>C'est moi qui l'a fé !</h3>
+                  <h1 className='main-title'>KidDo</h1>
+                  <h3 className='second-title'>Mon cadeau ? </h3>
+                  <h3 className='second-title'>C moa ki la fé !</h3>
 
-                  <Button>Découvrir</Button>
+                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}>Découvrir nos activités</Button>
                 </div>
               </Col>
               <Col></Col>
@@ -56,8 +59,10 @@ class LandingPage extends Component {
           </Container>
         </div>
         <div className="lpsection-examples">
-          <h2>Venez en prendre plein les mirettes</h2>
           <Container>
+        <div className="lp-fond-txt">
+        <h2 className="second-title">Venez en prendre plein les mirettes</h2>
+          </div>
             <Row>
               {activitiesLp.map((activity, index) => (
                 <Col xs="12" md="4" key={index}>
@@ -66,29 +71,33 @@ class LandingPage extends Component {
                       <CardImg
                         top
                         width="100%"
-                        src={activity.avatar}
+                        src={activity.activity_picture}
                         alt={activity.title}
                       />
                       <CardBody>
                         <CardTitle>
-                          <h4>{activity.activity_title}</h4>
+                          <h4 className="card-title">{activity.activity_title}</h4>
                         </CardTitle>
 
                         <CardSubtitle>
-                          <em>{activity.category}</em>
+                          {activity.category.map(cat=>(<span>
+                            <em>{cat}</em>
+                            &nbsp;
+                            </span>
+                            ))}
                         </CardSubtitle>
                         <CardText>
                           <FontAwesomeIcon icon={faHome} />
                           &nbsp;{activity.location} <br />
                           <FontAwesomeIcon icon={faClock} />
-                          &nbsp;{activity.activity_duration} heures <br />
+                          &nbsp;{activity.activity_duration} heure(s) <br />
                           <FontAwesomeIcon icon={faChild} />
                           &nbsp;{activity.activity_age_min} -{" "}
                           {activity.activity_age_max} ans <br />
                           <FontAwesomeIcon icon={faCoins} />
                           &nbsp;{activity.price} euros
                         </CardText>
-                        <Button>En savoir plus</Button>
+                        <Button color="primary">En savoir plus</Button>
                       </CardBody>
                     </Card>
                   </div>
@@ -103,14 +112,14 @@ class LandingPage extends Component {
             <Row>
               <Col sm="12" md="6">
                 <div className="lp-fond-txt">
-                  <h2>Proposez votre activité</h2>
-                  <p>
+                  <h2 className="second-title">Proposez votre activité</h2>
+                  <p style={{marginTop:"2vh"}}>
                     Vous avez un talent particulier pour la couture, la
                     programmation, l'ébénisterie, la peinture, la pirogravure
                     sur palette ? Vous souhaitez proposer un atelier pour les
-                    enfants, avec ou sans leurs parents ? En voiture Simone !{" "}
+                    enfants, avec ou sans leurs parents ? {" "}
                   </p>
-                  <Button>Proposez</Button>
+                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}><NavLink className="navlink" to={"/newactivity"}>En voiture Simone !</NavLink></Button>
                 </div>
               </Col>
               <Col sm="12" md="6"></Col>

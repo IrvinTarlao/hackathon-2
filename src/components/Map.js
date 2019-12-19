@@ -28,10 +28,10 @@ const Map = (props) => {
                     onClick={()=>{
                         setSelectedActivity(activity)
                     }}
-                    icon={{
-                        url: "logo192.png", 
-                        scaledSize: new window.google.maps.Size(40, 40)
-                    }}
+                    // icon={{
+                    //     url: "logo192.png", 
+                    //     scaledSize: new window.google.maps.Size(40, 40)
+                    // }}
                 />
             )}
             
