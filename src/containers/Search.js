@@ -12,7 +12,7 @@ import { faCoins } from "@fortawesome/free-solid-svg-icons";
 
 const Search = (props) => {
   
-  const { activities, filter, dispatch } = props;
+  const { activities, dispatch } = props;
   const [ newFilter, setNewFilter ] = useState(activities);
   
   const handleChange = (event) => {

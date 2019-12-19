@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { connect } from 'react-redux';
 import '../App.css';
 import NavBar from '../components/NavBar'
-import { Col, Button, Form, FormGroup, Label, Input, CustomInput, Jumbotron } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Label, Input, CustomInput } from 'reactstrap';
 
 const NewActivity = ({ activities, dispatch }) => {
 
