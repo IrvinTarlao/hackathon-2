@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       {/* <List /> */}
-     <HashRouter>
+      <HashRouter>
         <Switch>
           <Route path="/search" component={Search}></Route>
           <Route exact path="/" component={LandingPage}></Route>
