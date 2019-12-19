@@ -37,7 +37,7 @@ const Nav2 = (props) => {
             </NavItem>            
             <NavItem >
               <Li style={{color: "white", textAlign:"right", backgroundColor:"rgba(0, 0, 0, 0.5)"}}>
-              <NavLink className="navlink" to={"/Search2"}>proposer</NavLink></Li>
+              <NavLink className="navlink" to={"/newactivity"}>proposer</NavLink></Li>
             </NavItem>            
             <NavItem >
               <Li style={{color: "white", textAlign:"right", backgroundColor:"rgba(0, 0, 0, 0.5)"}}>

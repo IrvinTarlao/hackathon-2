@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 import {
   Container,
@@ -118,7 +119,7 @@ class LandingPage extends Component {
                     sur palette ? Vous souhaitez proposer un atelier pour les
                     enfants, avec ou sans leurs parents ? {" "}
                   </p>
-                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}>En voiture Simone !</Button>
+                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}><NavLink className="navlink" to={"/newactivity"}>En voiture Simone !</NavLink></Button>
                 </div>
               </Col>
               <Col sm="12" md="6"></Col>
