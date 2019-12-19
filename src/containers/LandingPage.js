@@ -20,6 +20,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faChild } from "@fortawesome/free-solid-svg-icons";
 import { faCoins } from "@fortawesome/free-solid-svg-icons";
+import ButtonOpenModalActivity from '../components/ButtonOpenModalActivity'
 
 class LandingPage extends Component {
   constructor(props) {
