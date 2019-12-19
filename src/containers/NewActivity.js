@@ -1,15 +1,15 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import '../App.css';
 import { Col, Button, Form, FormGroup, Label, Input, CustomInput } from 'reactstrap';
 
-const NewActivity = () => {
+const NewActivity = ({activities, dispatch}) => {
 
 
     const submitForm = (event) => {
         event.preventDefault()
         let data = Array.from(new FormData(event.target).entries())
-        // dispatch({type: 'SUBMIT', id: Array.from(data.entries())[0]})
-        console.log(data)
+        // console.log(data)
 
         //Récupération de catégories séléctionnées
         const cat = ['art', 'bricolage', 'cosmetique', 'recyclage', 'technologie']
@@ -23,7 +23,6 @@ const NewActivity = () => {
         }
 
         //Récupération de jours séléctionnés
-
         const day = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']
 
         let filteredDays = []
@@ -35,15 +34,15 @@ const NewActivity = () => {
         }
 
         const newEntry = {
-            "id": 17,
+            "id": activities.length+1,
             "first_name": data.filter(item => item[0] === 'first_name')[0][1],
             "last_name": data.filter(item => item[0] === 'last_name')[0][1],
-            "avatar": 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80',
+            "avatar": 'https://randomuser.me/api/portraits/med/men/75.jpg',
             "longitude": "4.8269787",
             "latitude": "45.7463242",
             "location": data.filter(item => item[0] === 'location')[0][1],
             "activity_title": data.filter(item => item[0] === 'activity_title')[0][1],
-            "activity_picture": 'https://images.unsplash.com/photo-1541944743827-e04aa6427c33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1226&q=80',
+            "activity_picture": 'https://images.unsplash.com/photo-1541944743827-e04aa6427c33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80',
             "activity_duration": data.filter(item => item[0] === 'activity_duration')[0][1],
             "activity_age_min": data.filter(item => item[0] === 'activity_age_min')[0][1],
             "activity_age_max": data.filter(item => item[0] === 'activity_age_max')[0][1],
@@ -53,8 +52,7 @@ const NewActivity = () => {
             "dispo": filteredDays
         }
 
-
-        console.log(newEntry)
+        dispatch({type: 'ADD_NEW_ACT', id: newEntry})
 
     }
 
@@ -201,4 +199,8 @@ const NewActivity = () => {
     )
 }
 
-export default NewActivity
+const mapStateToProps = state => ({
+    activities : state.activities
+})
+
+export default connect(mapStateToProps)(NewActivity)
