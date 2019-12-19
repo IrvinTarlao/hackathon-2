@@ -2,8 +2,14 @@ import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import { connect } from 'react-redux';
 import '../App.css';
+import './modalActivity.css';
 import NavBar from '../components/NavBar'
-import { Col, Button, Form, FormGroup, Label, Input, CustomInput } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Label, Input, CustomInput, CardText, Jumbotron } from 'reactstrap';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faChild } from "@fortawesome/free-solid-svg-icons";
+import { faCoins } from "@fortawesome/free-solid-svg-icons";
 
 const NewActivity = ({ activities, dispatch }) => {
 
@@ -16,7 +22,7 @@ const NewActivity = ({ activities, dispatch }) => {
         // console.log(data)
 
         //Récupération de catégories séléctionnées
-        const cat = ['art', 'bricolage', 'cosmetique', 'recyclage', 'technologie']
+        const cat = ['art', 'bricolage', 'cosmetique', 'cuisine', 'recyclage', 'technologie']
 
         let filteredActivitys = []
 
@@ -41,12 +47,12 @@ const NewActivity = ({ activities, dispatch }) => {
             "id": activities.length + 1,
             "first_name": data.filter(item => item[0] === 'first_name')[0][1],
             "last_name": data.filter(item => item[0] === 'last_name')[0][1],
-            "avatar": 'https://randomuser.me/api/portraits/med/men/75.jpg',
+            "avatar": 'https://ca.slack-edge.com/T6SG2QGG2-UHMT26ABH-01631d2a9d69-512',
             "longitude": "4.8269787",
             "latitude": "45.7463242",
             "location": data.filter(item => item[0] === 'location')[0][1],
             "activity_title": data.filter(item => item[0] === 'activity_title')[0][1],
-            "activity_picture": 'https://images.unsplash.com/photo-1541944743827-e04aa6427c33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80',
+            "activity_picture": 'https://images.unsplash.com/photo-1465808883813-7d2959af2252?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
             "activity_duration": parseInt(data.filter(item => item[0] === 'activity_duration')[0][1]),
             "activity_age_min": parseInt(data.filter(item => item[0] === 'activity_age_min')[0][1]),
             "activity_age_max": parseInt(data.filter(item => item[0] === 'activity_age_max')[0][1]),
@@ -137,16 +143,26 @@ const NewActivity = ({ activities, dispatch }) => {
                                             <option>5</option>
                                             <option>6</option>
                                             <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
                                         </Input>
                                     </Col>
                                     <Label for="activity_age_max" sm={2}>Age maximum</Label>
                                     <Col sm={2}>
                                         <Input type="select" name="activity_age_max" id="activity_age_max">
-                                            <option>3</option>
+                                        <option>3</option>
                                             <option>4</option>
                                             <option>5</option>
                                             <option>6</option>
                                             <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
                                         </Input>
                                     </Col>
                                 </FormGroup>
@@ -157,8 +173,9 @@ const NewActivity = ({ activities, dispatch }) => {
                                             <CustomInput type="checkbox" name="art" id="category1" label="Art" />
                                             <CustomInput type="checkbox" name="bricolage" id="category2" label="Bricolage" />
                                             <CustomInput type="checkbox" name="cosmetique" id="category3" label="Cosmetique" />
-                                            <CustomInput type="checkbox" name="recyclage" id="category4" label="Recyclage" />
-                                            <CustomInput type="checkbox" name="technologie" id="category5" label="Technologie" />
+                                            <CustomInput type="checkbox" name="cuisine" id="category4" label="Cuisine" />
+                                            <CustomInput type="checkbox" name="recyclage" id="category5" label="Recyclage" />
+                                            <CustomInput type="checkbox" name="technologie" id="category6" label="Technologie" />
                                         </Col>
                                     </div>
                                 </FormGroup>
@@ -212,31 +229,29 @@ const NewActivity = ({ activities, dispatch }) => {
                     .map((item, i) => {
                         return (
                             <div className='recapContainer'>
-                                <h1>{item.activity_title}</h1>
-                                <img src={item.activity_picture} alt='activité' />
-                                <h3 style={{height:'30%', width: '95%', padding: '8px'}}>Description : {item.description}</h3>
-                                <div className='recapList'>
-                                    <p>Catégories : </p>
-                                    {item.category.map((item, i)=>{
-                                        return(
-                                            <p>{item}</p>
-                                        )
-                                    })}
+                                <img src={item.activity_picture} className="modalActivity_img"></img>
+                                <div style={{
+                                    display: 'flex',
+                                    flexDirection:'column',
+                                    height: '90%',
+                                    justifyContent:'space-between',
+                                    alignItems:'center'
+                                }}>
+                                    <Jumbotron className="modalActivity_jumbotron">
+                                        <h4 className="display-3">{item.activity_title}</h4>
+
+                                        <h5>Cette activité se situe à {item.location}</h5>
+                                        <p>Lors de cet atelier avec {item.first_name} {item.last_name} de {item.activity_duration} heure(s), vous aurez l'occasion de passer un moment en famille tout en vous cultivant. Pour pouvoir profiter pleinement de ce moment, cette activités vous est conseillée pour des enfants âgés de {item.activity_age_min} à {item.activity_age_max} ans.
+                                    </p>
+                                        <br />
+                                        <br />
+                                        <CardText>
+                                            <FontAwesomeIcon icon={faHome} className="espacer_icones" />&nbsp;{item.location}<FontAwesomeIcon icon={faClock} className="espacer_icones" />&nbsp;{item.activity_duration} heure(s)<FontAwesomeIcon icon={faChild} className="espacer_icones" />&nbsp;{item.activity_age_min} -{" "}{item.activity_age_max} ans<FontAwesomeIcon icon={faCoins} className="espacer_icones" />&nbsp;{item.price} euros
+                                    </CardText>
+                                        <br />
+                                    </Jumbotron>
+                                    <Button color="primary" style={{width: '50%'}}><NavLink className="navlink" to={"/"}>Retourner au menu</NavLink></Button>
                                 </div>
-                                <div className='recapList'>
-                                    <p>Age min : {item.activity_age_min} ans</p>
-                                    <p>Age max : {item.activity_age_max} ans</p>
-                                </div>
-                                <div className='recapList'>
-                                    <p>Disponibilité : </p>
-                                    {item.dispo.map((item, i)=>{
-                                        return(
-                                            <p>{item}</p>
-                                        )
-                                    })}
-                                </div>
-                                <h3 style={{height:'5%', padding: '8px', marginTop: '4px'}}>Prix : {item.price} €</h3>
-                                <Button color="primary"><NavLink className="navlink" to={"/"}>Retourner au menu</NavLink></Button>
                             </div>
                         )
                     })}
