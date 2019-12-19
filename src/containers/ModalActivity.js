@@ -20,13 +20,23 @@ import {isSelected} from '../actions';
 class ModalActivity extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            isAddCart: false,
+        };
     }
 
     selectedActivityAndCloseModal= () =>{
         const { activity } = this.props;
+        let { isAddCart } = this.state;
         this.props.isSelected(activity);
         this.props.closeModal();
+        isAddCart=true;
+        this.setState({isAddCart});
+        setTimeout(()=>{
+                isAddCart=false;
+                this.setState({isAddCart});
+            }, 3000);
+        
     }
 
     render() {
@@ -60,6 +70,7 @@ class ModalActivity extends Component {
                             </div>
                         </div>
                         <Button color="primary" size="lg" style={{marginTop: "2vh"}} onClick={this.selectedActivityAndCloseModal}>Sélectionner cette activité</Button>
+                        {this.state.isAddCart ? <div style={{width:"100px", height:"100px",backGround:"red"}}>Bien ajouté au panier!!!!!!!!!!!!!!!!</div> : null}
                     </aside> : null
                 }
             </>
