@@ -12,11 +12,13 @@ import {
   CardSubtitle,
   Button
 } from "reactstrap";
+import NavBar from '../components/NavBar'
 
 class LandingPage extends Component {
   render() {
     return (
       <div className="landingPage">
+        <NavBar/>
         <div className="lpsection-home">
           <Container>
             <div className="lp-maintext-section">
