@@ -20,11 +20,15 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faChild } from "@fortawesome/free-solid-svg-icons";
 import { faCoins } from "@fortawesome/free-solid-svg-icons";
+import ButtonOpenModalActivity from '../components/ButtonOpenModalActivity'
 
 class LandingPage extends Component {
   constructor(props) {
     super(props);
+    this.state = {}
   }
+
+
 
   render() {
     const activitiesLp = [
@@ -97,7 +101,7 @@ class LandingPage extends Component {
                           <FontAwesomeIcon icon={faCoins} />
                           &nbsp;{activity.price} euros
                         </CardText>
-                        <Button color="primary">En savoir plus</Button>
+                        <ButtonOpenModalActivity activity={activity}/>
                       </CardBody>
                     </Card>
                   </div>

@@ -1,3 +1,16 @@
+/* SEARCH PAGE */
+.search {
+  font-size: 0.8em;
+}
+.search button {
+  font-size:1em;
+  position: absolute;
+  bottom: 0.5em;
+  right: 1.5em;
+}
+.search #div3 {
+  border-radius: 5px;
+}
 /* GENERAL */
 .main-title{
   font-size: 5em;
@@ -40,8 +53,6 @@ box-shadow: 10px 6px 61px -2px rgba(0,0,0,0.69);
   background-attachment: fixed;
 
 }
-
-
 
 .lpsection-examples {
   width:100vw;
