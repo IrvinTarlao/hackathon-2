@@ -28,17 +28,17 @@ const Nav2 = (props) => {
           <Nav className="mr-auto" navbar >
             <NavItem >
               <Li style={{color: "white", textAlign:"right", backgroundColor:"rgba(0, 0, 0, 0.5)"}}>
-                <NavLink className="navlink" to={"/Concept"}>notre concept</NavLink>
-              </Li>
-            </NavItem>            
-            <NavItem >
-              <Li style={{color: "white", textAlign:"right", backgroundColor:"rgba(0, 0, 0, 0.5)"}}>
               <NavLink className="navlink" to={"/Search"}>découvrir</NavLink></Li>
             </NavItem>            
             <NavItem >
               <Li style={{color: "white", textAlign:"right", backgroundColor:"rgba(0, 0, 0, 0.5)"}}>
               <NavLink className="navlink" to={"/NewActivity"}>proposer</NavLink></Li>
             </NavItem>                        
+            <NavItem >
+              <Li style={{color: "white", textAlign:"right", backgroundColor:"rgba(0, 0, 0, 0.5)"}}>
+                <NavLink className="navlink" to={"/Concept"}>notre concept</NavLink>
+              </Li>
+            </NavItem>            
             <NavItem>
               <Li className="cartcontainer" style={{color: "white", textAlign:"right", height:"40px"}}>
               <NavLink className="cart" to={"/Cart"}><img src="/cart.png" alt="cart" style={{ height:"27px"}}></img></NavLink></Li>
