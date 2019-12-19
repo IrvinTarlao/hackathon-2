@@ -12,10 +12,10 @@
     "activity_duration": 2,
     "activity_age_min": 8,
     "activity_age_max": 14,
-    "category": "Recyclage",
+    "category": ["Recyclage"],
     "description": null,
     "price": 30,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 2,
@@ -30,10 +30,10 @@
     "activity_duration": 4,
     "activity_age_min": 12,
     "activity_age_max": 18,
-    "category": "Technologie",
+    "category": ["Technologie"],
     "description": null,
     "price": 50,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 3,
@@ -48,10 +48,10 @@
     "activity_duration": 2,
     "activity_age_min": 5,
     "activity_age_max": 8,
-    "category": "Recyclage",
+    "category": ["Recyclage"],
     "description": null,
     "price": 20,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 4,
@@ -66,10 +66,10 @@
     "activity_duration": 3,
     "activity_age_min": 6,
     "activity_age_max": 12,
-    "category": "Bricolage",
+    "category": ["Bricolage"],
     "description": null,
     "price": 50,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 5,
@@ -84,10 +84,10 @@
     "activity_duration": 4,
     "activity_age_min": 8,
     "activity_age_max": 16,
-    "category": "Bricolage",
+    "category": ["Bricolage"],
     "description": null,
     "price": 60,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 6,
@@ -102,10 +102,10 @@
     "activity_duration": 2,
     "activity_age_min": 10,
     "activity_age_max": 14,
-    "category": "Technologie, Recyclage",
+    "category": ["Technologie", "Recyclage"],
     "description": null,
     "price": 30,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 7,
@@ -120,10 +120,10 @@
     "activity_duration": 3,
     "activity_age_min": 6,
     "activity_age_max": 12,
-    "category": "Art",
+    "category": ["Art"],
     "description": null,
     "price": 25,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 8,
@@ -138,10 +138,10 @@
     "activity_duration": 1,
     "activity_age_min": 8,
     "activity_age_max": 14,
-    "category": "Recyclage",
+    "category": ["Recyclage"],
     "description": null,
     "price": 15,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 9,
@@ -156,10 +156,10 @@
     "activity_duration": 2,
     "activity_age_min": 4,
     "activity_age_max": 10,
-    "category": "Bricolage",
+    "category": ["Bricolage"],
     "description": null,
     "price": 20,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 10,
@@ -174,10 +174,10 @@
     "activity_duration": 3,
     "activity_age_min": 7,
     "activity_age_max": 12,
-    "category": "Bricolage",
+    "category": ["Bricolage"],
     "description": null,
     "price": 40,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 11,
@@ -192,10 +192,10 @@
     "activity_duration": 1,
     "activity_age_min": 6,
     "activity_age_max": 10,
-    "category": "Cosmétique",
+    "category": ["Cosmétique"],
     "description": null,
     "price": 25,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 12,
@@ -210,10 +210,10 @@
     "activity_duration": 3,
     "activity_age_min": 8,
     "activity_age_max": 18,
-    "category": "Art",
+    "category": ["Art"],
     "description": null,
     "price": 40,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 13,
@@ -228,10 +228,10 @@
     "activity_duration": 2,
     "activity_age_min": 10,
     "activity_age_max": 16,
-    "category": "Bricolage",
+    "category": ["Bricolage"],
     "description": null,
     "price": 50,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 14,
@@ -246,10 +246,10 @@
     "activity_duration": 1,
     "activity_age_min": 4,
     "activity_age_max": 8,
-    "category": "Bricolage, Recyclage",
+    "category": ["Bricolage", "Recyclage"],
     "description": null,
     "price": 15,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 15,
@@ -264,10 +264,10 @@
     "activity_duration": 2,
     "activity_age_min": 12,
     "activity_age_max": 18,
-    "category": "Technologie",
+    "category": ["Technologie"],
     "description": null,
     "price": 35,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 16,
@@ -282,10 +282,10 @@
     "activity_duration": 3,
     "activity_age_min": 14,
     "activity_age_max": 16,
-    "category": "Bricolage, Recyclage",
+    "category": ["Bricolage", "Recyclage"],
     "description": null,
     "price": 60,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   },
   {
     "id": 17,
@@ -300,9 +300,9 @@
     "activity_duration": 1,
     "activity_age_min": 4,
     "activity_age_max": 14,
-    "category": "Art",
+    "category": ["Art"],
     "description": null,
     "price": 5,
-    "dispo": "LMMJVS"
+    "dispo": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi","Samedi", "Dimanche"]
   }
 ]

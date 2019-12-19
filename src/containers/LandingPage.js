@@ -75,7 +75,11 @@ class LandingPage extends Component {
                         </CardTitle>
 
                         <CardSubtitle>
-                          <em>{activity.category}</em>
+                          {activity.category.map(cat=>(<span>
+                            <em>{cat}</em>
+                            &nbsp;
+                            </span>
+                            ))}
                         </CardSubtitle>
                         <CardText>
                           <FontAwesomeIcon icon={faHome} />
