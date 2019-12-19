@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Map from "../components/Map";
 import { connect } from 'react-redux';
+import NavBar from '../components/NavBar';
 
 
 class Search extends Component {
@@ -16,7 +17,7 @@ class Search extends Component {
 
     return (
       <div>
-        
+        <NavBar />
         <Map
             googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBrWwzj5tzzX9MpBFXqfkKjzFYZIoGUuwI`}
             loadingElement={<div id="div1" style={{ height: `100%` }} />}
