@@ -54,7 +54,6 @@ class LandingPage extends Component {
                   <h1 className='main-title'>KidDo</h1>
                   <h3 className='second-title'>Mon cadeau ? </h3>
                   <h3 className='second-title'>C moa ki la fé !</h3>
-
                   <Button color="primary" size="lg" style={{marginTop: "2vh"}}><NavLink className="navlink" to={"/Search"}>Découvrir nos activités !</NavLink></Button>
                 </div>
               </Col>

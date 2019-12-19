@@ -1,8 +1,13 @@
 import React from "react";
-import { Container, Jumbotron, Button } from "reactstrap";
+import { Container, Jumbotron, Button, Row, Col } from "reactstrap";
 import "./concept.css";
 import { NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChild } from "@fortawesome/free-solid-svg-icons";
+import { faRecycle } from "@fortawesome/free-solid-svg-icons";
+import { faHandshake } from "@fortawesome/free-solid-svg-icons";
+import "../App.css";
 
 export default class Concept extends React.Component {
   constructor(props) {
@@ -15,45 +20,79 @@ export default class Concept extends React.Component {
       <div>
         <NavBar />
         <div className="concept_second_img"></div>
-        <Jumbotron className="concept_jumb">
-          <Container>
-            <h4 className="second-title">
-              Notre mission, vous faire partager plus de moments en famille !
-            </h4>
-            <p className="lead">
-              Metuentes igitur idem latrones Lycaoniam magna parte campestrem
-              cum se inpares nostris fore congressione stataria documentis
-              frequentibus scirent, tramitibus deviis petivere Pamphyliam diu
-              quidem intactam sed timore populationum et caedium, milite per
-              omnia diffuso propinqua, magnis undique praesidiis conmunitam.
-              Eius populus ab incunabulis primis ad usque pueritiae tempus
-              extremum, quod annis circumcluditur fere trecentis, circummurana
-              pertulit bella, deinde aetatem ingressus adultam post multiplices
-              bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus
-              et virum ex omni plaga quam orbis ambit inmensus, reportavit
-              laureas et triumphos, iamque vergens in senium et nomine solo
-              aliquotiens vincens ad tranquilliora vitae discessit. Thalassius
-              vero ea tempestate praefectus praetorio praesens ipse quoque
-              adrogantis ingenii, considerans incitationem eius ad multorum
-              augeri discrimina, non maturitate vel consiliis mitigabat, ut
-              aliquotiens celsae potestates iras principum molliverunt, sed
-              adversando iurgandoque cum parum congrueret, eum ad rabiem potius
-              evibrabat, Augustum actus eius exaggerando creberrime docens,
-              idque, incertum qua mente, ne lateret adfectans. quibus mox Caesar
-              acrius efferatus, velut contumaciae quoddam vexillum altius
-              erigens, sine respectu salutis alienae vel suae ad vertenda
-              opposita instar rapidi fluminis irrevocabili impetu ferebatur.
-            </p>
-            <p>
-              It uses utility classes for typography and spacing to space
-              content out within the larger container.
-            </p>
-            <p className="lead">
-            <Button color="primary" size="lg" style={{marginTop: "2vh"}}><NavLink className="navlink" to={"/Search"}>Découvrir nos activités !</NavLink></Button>
+        <Container>
+          <Row>
+            <Col>
+              <h4
+                className="second-title"
+                style={{ textAlign: "center", paddingTop: "2vh" }}
+              >
+                Nos valeurs
+              </h4>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="concept-item">
+                <p style={{ textAlign: "justify" }}>
+                  <span className="lettrine">
+                    <FontAwesomeIcon icon={faRecycle} className="main-title" />
+                  </span>
+                  <h3 className="card-title">Réparer plutôt que jeter</h3>
+                  Metuentes igitur idem latrones Lycaoniam magna parte
+                  campestrem cum se inpares nostris fore congressione stataria.
+                  Metuentes igitur idem latrones Lycaoniam magna parte
+                  campestrem cum se inpares nostris fore congressione stataria.
+                </p>
+              </div>
+            </Col>
+            <Col>
+              <div className="concept-item">
+                {" "}
+                <p style={{ textAlign: "justify" }}>
+                  <span className="lettrine">
+                    <FontAwesomeIcon icon={faChild} className="main-title" />
+                  </span>
+                  <h3 className="card-title">Des enfants consomm' acteurs</h3>
+                  Metuentes igitur idem latrones Lycaoniam magna parte
+                  campestrem cum se inpares nostris fore congressione stataria.
+                  Metuentes igitur idem latrones Lycaoniam magna parte
+                  campestrem cum se inpares nostris fore congressione stataria.
+                </p>
+              </div>
+            </Col>
+            <Col>
+              <div className="concept-item">
+                {" "}
+                <p style={{ textAlign: "justify" }}>
+                  <span className="lettrine">
+                    <FontAwesomeIcon
+                      icon={faHandshake}
+                      className="main-title"
+                    />
+                  </span>
+                  <h3 className="card-title">Favoriser l'entraide</h3>
+                  Metuentes igitur idem latrones Lycaoniam magna parte
+                  campestrem cum se inpares nostris fore congressione stataria.
+                  Metuentes igitur idem latrones Lycaoniam magna parte
+                  campestrem cum se inpares nostris fore congressione stataria.
+                </p>
+              </div>
+            </Col>
+          </Row>
 
-            </p>
-          </Container>
-        </Jumbotron>
+          <Row>
+            <Col>
+              <div className='centered-button'>
+                <Button color="primary" style={{ marginTop: "2vh" }}>
+                  <NavLink className="navlink" to={"/Search"}>
+                    Découvrir nos activités !
+                  </NavLink>
+                </Button>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }

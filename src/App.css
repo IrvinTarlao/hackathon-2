@@ -1,4 +1,5 @@
 /* SEARCH PAGE */
+
 .search {
   font-size: 0.8em;
 }
@@ -205,6 +206,28 @@ box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
   color: black;
   border-radius: 5px;
 }
+
+
+/*CONCEPT */
+
+
+.lettrine {
+  font-size: 1em;
+  padding-right:1em;
+  float:left;
+  color:rgba(0, 0, 0, 0.712);
+}
+
+.concept-item{
+  margin-top: 3vh;
+}
+
+.centered-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* .App {
   text-align: center;
 }
