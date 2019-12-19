@@ -28,7 +28,7 @@ const Nav2 = (props) => {
           <Nav className="mr-auto" navbar >
             <NavItem >
               <Li style={{color: "white", textAlign:"right", backgroundColor:"rgba(0, 0, 0, 0.5)"}}>
-                <NavLink className="navlink2" to={"/Concept"}>notre concept</NavLink>
+                <NavLink className="navlink" to={"/Concept"}>notre concept</NavLink>
               </Li>
             </NavItem>            
             <NavItem >
