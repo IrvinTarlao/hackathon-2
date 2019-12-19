@@ -115,6 +115,69 @@ box-shadow: 0px 0px 145px 84px rgba(0,0,0,1);
   color: aliceblue;
 }
 
+.newActivityRecap{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  top: 80px;
+}
+
+.recapContainer{
+  background-color: rgba(255, 255, 255, 1);
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  padding: 6px;
+  border-radius: 12px;
+  -webkit-box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
+  -moz-box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
+  box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
+  color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recapContainer h1{
+  font-size: 2vw;
+  height: 5%;
+  margin: 4px;
+  width: 95%;
+  border-radius: 8px;
+  background-color: rgba(46, 46, 46, 0.2);
+}
+
+.recapContainer h3{
+  font-size: 1.5vw;
+  margin: 4px;
+  border-radius: 8px;
+  background-color: rgba(46, 46, 46, 0.2);
+}
+
+.recapContainer p{
+  font-size: 1vw;
+  margin: 0 24px 0 24px;
+}
+
+.recapContainer img{
+  width: 95%;
+  height: 30%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recapList{
+  width: 95%;
+  height: 5%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin: 4px;
+  background-color: rgba(46, 46, 46, 0.2);
+}
+
 .newActivityID{
   background-color: rgba(59, 59, 59, 0.95);
   border-radius: 12px;
