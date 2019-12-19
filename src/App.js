@@ -1,12 +1,16 @@
 import React from 'react';
 import {HashRouter, Switch, Route } from 'react-router-dom';
-// import List from './containers/Test'
 import Search from './containers/Search';
-// import Home from './containers/Home';
+import LandingPage from "./containers/LandingPage";
+import Concept from './components/Concept'
+import './App.css';
+
+import Search2 from "./containers/Search2.js"
+
+// import Search from './containers/Home';
 // import Activity from './containers/Home';
 // import Cart from './containers/Home';
 // import NewActivity from './containers/Home';
-import './App.css';
 
 function App() {
   return (
@@ -15,12 +19,14 @@ function App() {
      <HashRouter>
         <Switch>
           <Route path="/search" component={Search}></Route>
-            {/* <Route exact path="/" component={Home}></Route>
-            <Route path="/activity" component={Activity}></Route>
-            <Route path="/cart" component={Cart}></Route>
-            <Route path="/newactivity" component={NewActivity}></Route> */}
-        </Switch>
-      </HashRouter>
+          <Route exact path="/" component={LandingPage}></Route>
+          {/* <Route path="/search2" component={Search2}></Route> */}
+          {/* <Route exact path="/" component={Home}></Route>
+          <Route path="/activity" component={Activity}></Route>
+          <Route path="/cart" component={Cart}></Route>
+          <Route path="/newactivity" component={NewActivity}></Route> */}
+        </Switch> 
+     </HashRouter>
     </div>
   );
 }

@@ -8,7 +8,69 @@
   bottom: 0.5em;
   right: 1.5em;
 }
+.search #div3 {
+  border-radius: 5px;
+}
+/* LANDING PAGE */
 
+.lpsection-home {
+  min-height: 100vh;
+  width:100vw;
+  text-align: left;
+  background-image:url("./img/lp-home.jpg");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5vh 5vw;
+  background-attachment: fixed;
+}
+
+.lpsection-examples {
+  width:100vw;
+  min-height: 100vh;
+  text-align: center;
+  background-image:url("./img/lp-section2.jpg");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5vh 5vw;
+}
+
+.lpsection-examples h2 {
+  text-align: center;
+  padding: 5vh 0;
+  color: black;
+}
+
+.card-item {
+  padding: 5vh 0;
+}
+
+.lpsection-proposez {
+  min-height: 100vh;
+  width:100vw;
+  text-align: left;
+  background-image:url("./img/lp-section3.jpg");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5vh 5vw;
+  background-attachment: fixed;
+  color: white;
+}
+
+.lp-fond-txt{
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2vh 2vw;
+  color: black;
+  border-radius: 5px;
+}
 /* .App {
   text-align: center;
 }
