@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { NavLink } from "react-router-dom";
 import { connect } from 'react-redux';
 import '../App.css';
 import NavBar from '../components/NavBar'
-import { Col, Button, Form, FormGroup, Label, Input, CustomInput } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Label, Input, CustomInput, Jumbotron } from 'reactstrap';
 
 const NewActivity = ({ activities, dispatch }) => {
+
+    const [resum, displayResum] = useState(false)
 
 
     const submitForm = (event) => {
@@ -55,12 +58,14 @@ const NewActivity = ({ activities, dispatch }) => {
 
         dispatch({ type: 'ADD_NEW_ACT', id: newEntry })
 
+        displayResum(true)
+
     }
 
     return (
         <div className="newActivityContainer">
             <NavBar />
-            <div className='newActivityForm'>
+            <div className='newActivityForm' style={{ display: resum ? 'none' : 'block' }}>
                 <Form onSubmit={submitForm}>
                     <FormGroup row>
                         <Col lg={{ size: 4, offset: 1 }} sm={12}>
@@ -198,6 +203,43 @@ const NewActivity = ({ activities, dispatch }) => {
                         </Col>
                     </FormGroup>
                 </Form>
+            </div>
+            <div className='newActivityRecap' style={{ display: resum ? 'block' : 'none' }}>
+                {activities
+                    .filter((item, i) => {
+                        return i === activities.length - 1
+                    })
+                    .map((item, i) => {
+                        return (
+                            <div className='recapContainer'>
+                                <h1>{item.activity_title}</h1>
+                                <img src={item.activity_picture} alt='activité' />
+                                <h3 style={{height:'30%', width: '95%', padding: '8px'}}>Description : {item.description}</h3>
+                                <div className='recapList'>
+                                    <p>Catégories : </p>
+                                    {item.category.map((item, i)=>{
+                                        return(
+                                            <p>{item}</p>
+                                        )
+                                    })}
+                                </div>
+                                <div className='recapList'>
+                                    <p>Age min : {item.activity_age_min} ans</p>
+                                    <p>Age max : {item.activity_age_max} ans</p>
+                                </div>
+                                <div className='recapList'>
+                                    <p>Disponibilité : </p>
+                                    {item.dispo.map((item, i)=>{
+                                        return(
+                                            <p>{item}</p>
+                                        )
+                                    })}
+                                </div>
+                                <h3 style={{height:'5%', padding: '8px', marginTop: '4px'}}>Prix : {item.price} €</h3>
+                                <Button color="primary"><NavLink className="navlink" to={"/"}>Retourner au menu</NavLink></Button>
+                            </div>
+                        )
+                    })}
             </div>
         </div>
     )
