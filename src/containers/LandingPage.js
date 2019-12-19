@@ -48,7 +48,7 @@ class LandingPage extends Component {
                   <h3>Mon cadeau ? </h3>
                   <h3>C'est moi qui l'a fé !</h3>
 
-                  <Button>Découvrir</Button>
+                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}>Découvrir</Button>
                 </div>
               </Col>
               <Col></Col>
@@ -94,7 +94,7 @@ class LandingPage extends Component {
                           <FontAwesomeIcon icon={faCoins} />
                           &nbsp;{activity.price} euros
                         </CardText>
-                        <Button>En savoir plus</Button>
+                        <Button color="primary">En savoir plus</Button>
                       </CardBody>
                     </Card>
                   </div>
@@ -114,9 +114,9 @@ class LandingPage extends Component {
                     Vous avez un talent particulier pour la couture, la
                     programmation, l'ébénisterie, la peinture, la pirogravure
                     sur palette ? Vous souhaitez proposer un atelier pour les
-                    enfants, avec ou sans leurs parents ? En voiture Simone !{" "}
+                    enfants, avec ou sans leurs parents ? {" "}
                   </p>
-                  <Button>Proposez</Button>
+                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}>En voiture Simone !</Button>
                 </div>
               </Col>
               <Col sm="12" md="6"></Col>
