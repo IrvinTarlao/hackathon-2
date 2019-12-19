@@ -3,12 +3,8 @@ import NavBar from './NavBar';
 import { Container, Card, CardBody, CardTitle, CardSubtitle, CardText, Button, CardImg } from 'reactstrap';
 import { Row, Col, FormGroup, Form, Input } from 'reactstrap';
 import { connect } from 'react-redux';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { faClock } from "@fortawesome/free-solid-svg-icons";
-import { faChild } from "@fortawesome/free-solid-svg-icons";
-import { faCoins } from "@fortawesome/free-solid-svg-icons";
-import ButtonOpenModalActivity from '../components/ButtonOpenModalActivity';
+import Payment from './Payment'
+
 
 class Cart extends Component {
     constructor(props) {
@@ -66,7 +62,7 @@ class Cart extends Component {
         <div>
             <NavBar/>
             <div style={{width:"100vw", height:"100vh", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                <div style={{position:"relative", width:"70vw", height:"50vh", borderRadius:"40px", backgroundColor:"#F4F4F4", padding:"50px", display:"flex", justifyContent:"space-around", overflow:"auto"}}>
+                <div style={{position:"relative", width:"70vw", height:this.state.isClicked ? "70vh":"50vh", borderRadius:"40px", backgroundColor:"#F4F4F4", padding:"50px", display:"flex", justifyContent:"space-around", overflow:"auto"}}>
 
                     <div style={{display: this.state.isClicked ? "none" : "flex", width:"70vw", justifyContent:"space-evenly", alignItems:"center"}}>
                         <div style={{width:"30vw"}}>{displayCards(activities)}</div>
@@ -92,23 +88,7 @@ class Cart extends Component {
 
                     </div>
                     <div style={{display: this.state.isClicked ? "flex" : "none", width:"70vw", justifyContent:"space-evenly", alignItems:"center"}}>
-                        <div style={{width:"30vw"}}>input</div>
-                        {/* <div style={{display:"flex", flexDirection:"column", alignItems:"center", height:"70px"}}>
-                            <p>quantité</p>
-                            <select style={{height:"20px"}}>quantité
-                                <option selected value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </select>
-                        </div> */}
-
+                        <Payment/>
 
                     </div>
                     <Button 
