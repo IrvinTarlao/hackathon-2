@@ -43,12 +43,12 @@ const NewActivity = ({activities, dispatch}) => {
             "location": data.filter(item => item[0] === 'location')[0][1],
             "activity_title": data.filter(item => item[0] === 'activity_title')[0][1],
             "activity_picture": 'https://images.unsplash.com/photo-1541944743827-e04aa6427c33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80',
-            "activity_duration": data.filter(item => item[0] === 'activity_duration')[0][1],
-            "activity_age_min": data.filter(item => item[0] === 'activity_age_min')[0][1],
-            "activity_age_max": data.filter(item => item[0] === 'activity_age_max')[0][1],
+            "activity_duration": parseInt(data.filter(item => item[0] === 'activity_duration')[0][1]) ,
+            "activity_age_min": parseInt(data.filter(item => item[0] === 'activity_age_min')[0][1]),
+            "activity_age_max": parseInt(data.filter(item => item[0] === 'activity_age_max')[0][1]),
             "category": filteredActivitys,
             "description": data.filter(item => item[0] === 'description')[0][1],
-            "price": data.filter(item => item[0] === 'price')[0][1],
+            "price": parseInt(data.filter(item => item[0] === 'price')[0][1]),
             "dispo": filteredDays
         }
 
@@ -60,7 +60,7 @@ const NewActivity = ({activities, dispatch}) => {
         <div className="newActivityContainer">
             <Form onSubmit={submitForm}>
                 <FormGroup row>
-                    <Col lg={4} sm={12}>
+                    <Col lg={{size: 4, offset: 1}} sm={12}>
                         <div className="newActivityID">
                             <FormGroup row>
                                 <Label for="last_name" sm={2}>Nom</Label>
@@ -81,7 +81,7 @@ const NewActivity = ({activities, dispatch}) => {
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
-                                <Label for="zip" sm={2}>Code postal</Label>
+                                <Label for="zip" sm={2}>CP</Label>
                                 <Col sm={10}>
                                     <Input type="text" name="zip" id="zip" placeholder="" />
                                 </Col>
@@ -187,8 +187,8 @@ const NewActivity = ({activities, dispatch}) => {
                                 </Col>
                             </FormGroup>
                             <FormGroup check row>
-                                <Col sm={{ size: 10, offset: 2 }}>
-                                    <Button>Submit</Button>
+                                <Col sm={{ size: 6, offset: 3 }}>
+                                    <Button color="primary" size="lg" block>Submit</Button>
                                 </Col>
                             </FormGroup>
                         </div>
