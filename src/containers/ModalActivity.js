@@ -15,6 +15,11 @@ class ModalActivity extends Component {
         this.state = {};
     }
 
+    selectedActivityAndCloseModal= () =>{
+        const { activity } = this.props;
+        this.props.isSelected(activity);
+        this.props.closeModal();
+    }
 
     render() {
         const { showModalActivity, activity } = this.props;
@@ -39,7 +44,7 @@ class ModalActivity extends Component {
                                 <p>citia, veteribus sint anteponendi, ut equis vetulis teneros anteponere solemus. Indigna homine dubitatio! Non enim debent esse amicitiarum sicut aliarum rerum satietates; veterrima quaeque, ut ea vina, quae vetustatem ferunt, esse debet suavissima; verumque illud est, quod dicitur, multos modios salis simul edendos esse, ut amicitiae munus expletu</p>
                             </Jumbotron>
                         </div>
-                        <Button color="primary" size="lg" style={{marginTop: "2vh"}} onClick={()=>{this.props.isSelected(activity)}}>Mettre dans le panier</Button>
+                        <Button color="primary" size="lg" style={{marginTop: "2vh"}} onClick={this.selectedActivityAndCloseModal}>Sélectionner cette activité</Button>
                     </aside> : null
                 }
             </>

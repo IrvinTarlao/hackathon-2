@@ -31,7 +31,7 @@ class ButtonOpenModal extends Component {
     closeModal=()=> {
         let {showModalActivity} = this.state;
         showModalActivity = false;
-        setTimeout(()=>this.setState({ showModalActivity }), 500)
+        setTimeout(()=>this.setState({ showModalActivity }), 200)
     }
 
     render(){
