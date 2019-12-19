@@ -178,8 +178,9 @@ box-shadow: 0px 0px 145px 84px rgba(0,0,0,1);
 }
 
 .newActivityID{
-  background-color: rgba(59, 59, 59, 0.95);
-  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  color: black;
   padding: 16px;
   margin: 12px;
   -webkit-box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
@@ -188,8 +189,9 @@ box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
 }
 
 .newActivityDescription {
-  background-color:  rgba(59, 59, 59, 0.95);
-  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  color: black;
   padding: 16px;
   margin: 12px;
   -webkit-box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
