@@ -1,21 +1,22 @@
-import React from "react";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import React from 'react';
+import {HashRouter, Switch, Route } from 'react-router-dom';
+import Search from './containers/Search';
 import LandingPage from "./containers/LandingPage";
-import Search2 from "./containers/Search2.js";
-// import Search from './containers/Home';
-// import Activity from './containers/Home';
-import Cart from './components/Cart';
-import NewActivity from './containers/NewActivity';
 import Concept from './components/Concept'
+import './App.css';
+import NewActivity from './containers/NewActivity';
+import Cart from './components/Cart'
+// import Cart from './containers/Home';
 
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      {/* <List /> */}
+     <HashRouter>
         <Switch>
+          <Route path="/search" component={Search}></Route>
           <Route exact path="/" component={LandingPage}></Route>
-          <Route path="/search2" component={Search2}></Route>
-          <Route path="/concept" component={Concept}></Route>
+          <Route path="/Concept" component={Concept}></Route>
           <Route path="/cart" component={Cart}></Route>        
           <Route path="/newactivity" component={NewActivity}></Route>
         </Switch> 
