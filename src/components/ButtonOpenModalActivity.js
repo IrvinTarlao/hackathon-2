@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ModalActivity from './ModalActivity';
-import './buttonOpenModalActivity.css'
+import {
+    Button
+  } from "reactstrap";
 
 class ButtonOpenModal extends Component {
     constructor(props) {
@@ -36,7 +38,7 @@ class ButtonOpenModal extends Component {
         
         return(
             <div className="SectionContainer">
-                <button className="button" onClick={this.openModal}>En savoir plus</button>
+                <Button color="primary" size="lg" style={{marginTop: "2vh"}} onClick={this.openModal}>En savoir plus</Button>
                 <ModalActivity showModalActivity={this.state.showModalActivity} closeModal={this.closeModal} activity={this.props.activity}/>
             </div>
         )
