@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Card from 'react-credit-cards';
-
+import { NavLink } from "react-router-dom";
 import SupportedCards from './Cards';
 
 import {
@@ -23,6 +23,7 @@ export default class Payment extends React.Component {
     issuer: '',
     focused: '',
     formData: null,
+    isPaid: false
   };
 
   handleCallback = ({ issuer }, isValid) => {
@@ -68,7 +69,7 @@ export default class Payment extends React.Component {
 
     return (
       <div key="Payment">
-        <div className="App-payment">
+        <div className="App-payment" style={{display: this.state.isPaid ? "none" : "block"}}>
           
           <Card
             number={number}
@@ -77,6 +78,7 @@ export default class Payment extends React.Component {
             cvc={cvc}
             focused={focused}
             callback={this.handleCallback}
+            
           />
           <form ref={c => (this.form = c)} onSubmit={this.handleSubmit}>
             <div className="form-group">
@@ -131,7 +133,11 @@ export default class Payment extends React.Component {
             </div>
             <input type="hidden" name="issuer" value={issuer} />
             <div className="form-actions">
-              <button className="btn btn-primary btn-block">PAY</button>
+              <button 
+              onClick={()=>this.setState({
+                isPaid:true
+            })}
+              className="btn btn-primary btn-block">PAY</button>
             </div>
           </form>
           {formData && (
@@ -140,6 +146,12 @@ export default class Payment extends React.Component {
             </div>
           )}
           
+        </div>
+        <div style={{display: this.state.isPaid ? "block" : "none", textAlign:"center"}}>
+            <p>Votre paiement a bien été effectué.<br></br>Un email de confirmation vous sera envoyé dans quelques minutes.</p>
+            <NavLink to={"/"}>
+                <button style={{backgroundColor:"#076BD9", borderRadius:"30px", padding:"10px 20px", color:"white", outline:"none"}}>retour à l'accueil</button>
+            </NavLink>
         </div>
         
       </div>

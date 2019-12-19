@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import NavBar from './NavBar';
-import { Container, Card, CardBody, CardTitle, CardSubtitle, CardText, Button, CardImg } from 'reactstrap';
-import { Row, Col, FormGroup, Form, Input } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button, CardImg } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import { connect } from 'react-redux';
-import Payment from './Payment'
+import Payment from './Payment';
+import { NavLink } from "react-router-dom";
 
 
 class Cart extends Component {
@@ -62,25 +63,22 @@ class Cart extends Component {
         <div>
             <NavBar/>
             <div style={{width:"100vw", height:"100vh", display:"flex", justifyContent:"center", alignItems:"center"}}>
+                
                 <div style={{position:"relative", width:"70vw", height:this.state.isClicked ? "70vh":"50vh", borderRadius:"40px", backgroundColor:"#F4F4F4", padding:"50px", display:"flex", justifyContent:"space-around", overflow:"auto"}}>
-
+                
                     <div style={{display: this.state.isClicked ? "none" : "flex", width:"70vw", justifyContent:"space-evenly", alignItems:"center"}}>
+                        <div style={{display: activities.length === 0 ? "block" : "none"}}>
+                            <p>Votre panier est actuellement vide</p>
+                            <NavLink to={"/Search"}>
+                                <Button 
+                                    style={{display: this.state.isClicked ? "none" : "block", backgroundColor:"#076BD9", borderRadius:"30px", padding:"10px 20px", color:"white", outline:"none"}} 
+                                >Voir les activités disponibles
+                                </Button>
+                            </NavLink>
+                            
+                            
+                        </div>
                         <div style={{width:"30vw"}}>{displayCards(activities)}</div>
-                        {/* <div style={{display:"flex", flexDirection:"column", alignItems:"center", height:"70px"}}>
-                            <p>quantité</p>
-                            <select style={{height:"20px"}}>quantité
-                                <option selected value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </select>
-                        </div> */}
                         <div style={{display:"flex", flexDirection:"column", alignItems:"center", height:"70px"}}>
                             <p>Total :</p>
                             <p>{priceSum()} €</p>
@@ -92,7 +90,7 @@ class Cart extends Component {
 
                     </div>
                     <Button 
-                        style={{position:"absolute", bottom:"20px", right:"20px", height:"50px", borderRadius:"40px"}} 
+                        style={{display: this.state.isClicked ? "none" : "block", position:"absolute", bottom:"20px", right:"20px", backgroundColor:"#076BD9", borderRadius:"30px", padding:"10px 20px", color:"white", outline:"none"}} 
                         onClick={()=>this.setState({
                             isClicked:true
                         })}
