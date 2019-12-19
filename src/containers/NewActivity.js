@@ -52,6 +52,8 @@ const NewActivity = () => {
             "price": data.filter(item => item[0] === 'price')[0][1],
             "dispo": filteredDays
         }
+
+
         console.log(newEntry)
 
     }
@@ -60,7 +62,7 @@ const NewActivity = () => {
         <div className="newActivityContainer">
             <Form onSubmit={submitForm}>
                 <FormGroup row>
-                    <Col lg={5} sm={12}>
+                    <Col lg={4} sm={12}>
                         <div className="newActivityID">
                             <FormGroup row>
                                 <Label for="last_name" sm={2}>Nom</Label>
@@ -100,7 +102,7 @@ const NewActivity = () => {
                             </FormGroup>
                         </div>
                     </Col>
-                    <Col lg={7} sm={12}>
+                    <Col lg={6} sm={12}>
                         <div className="newActivityDescription">
                             <FormGroup row>
                                 <Label for="activity_title" sm={2}>Titre</Label>
@@ -122,7 +124,7 @@ const NewActivity = () => {
                             </FormGroup>
                             <FormGroup row>
                                 <Label for="activity_age_min" sm={2}>Age minimum</Label>
-                                <Col sm={10}>
+                                <Col sm={2}>
                                     <Input type="select" name="activity_age_min" id="activity_age_min">
                                         <option>3</option>
                                         <option>4</option>
@@ -131,10 +133,8 @@ const NewActivity = () => {
                                         <option>7</option>
                                     </Input>
                                 </Col>
-                            </FormGroup>
-                            <FormGroup row>
                                 <Label for="activity_age_max" sm={2}>Age maximum</Label>
-                                <Col sm={10}>
+                                <Col sm={2}>
                                     <Input type="select" name="activity_age_max" id="activity_age_max">
                                         <option>3</option>
                                         <option>4</option>
