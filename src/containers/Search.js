@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Row, Col, FormGroup, Form, Label, Input } from 'reactstrap';
-import { Container, CardColumns, Card, CardBody, CardTitle, CardSubtitle, CardText, Button, CardImg } from 'reactstrap';
+import Map from "../components/Map";
+import { Row, Col, FormGroup, Form, Input } from 'reactstrap';
+import { Container, Card, CardBody, CardTitle, CardSubtitle, CardText, Button, CardImg } from 'reactstrap';
 import { connect } from 'react-redux';
 
 // import Filter from './containers/Filter'; // A faire
@@ -10,8 +11,7 @@ import { connect } from 'react-redux';
 class Search extends Component {
   
   displayCards = () => {
-    const { activities, dispatch } = this.props;
-    console.log(activities)
+    const { activities, filter, dispatch } = this.props;
 
     return activities.map(item =>
       <Card className="mb-2 mt-2 d-block">
@@ -63,7 +63,13 @@ class Search extends Component {
               {this.displayCards()}
             </Col>
           <Col className="col-6 md-6">
-            <div>MAP</div>
+            <Map
+              googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBrWwzj5tzzX9MpBFXqfkKjzFYZIoGUuwI`}
+              loadingElement={<div id="div1" style={{ height: `100%` }} />}
+              containerElement={<div id="div2" style={{ height: `71%`, position:"fixed", top:"219px", right:0, width: "100vw", zIndex:"1"}} />}
+              mapElement={<div id="div3" style={{ height: `100%` }} />}
+              activities={this.state.filter}
+            />
           </Col>
           </Row>
         </Col>
