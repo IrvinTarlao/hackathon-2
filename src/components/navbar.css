@@ -27,10 +27,13 @@
 }
 
 .logo {
+    top:0;
+    left:0;
     color: #525252;
     margin: 0 1vw;
     padding: 0 20px;
     text-align: center;
+    z-index: 9999;
 }
 
 .navlink:hover {  
