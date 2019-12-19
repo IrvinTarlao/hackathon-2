@@ -1,4 +1,5 @@
 /* SEARCH PAGE */
+
 .search {
   min-height: 100vh;
   display: flex;
@@ -233,3 +234,59 @@ box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
   color: black;
   border-radius: 5px;
 }
+
+
+/*CONCEPT */
+
+
+.lettrine {
+  font-size: 1em;
+  padding-right:1em;
+  float:left;
+  color:rgba(0, 0, 0, 0.712);
+}
+
+.concept-item{
+  margin-top: 3vh;
+}
+
+.centered-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
