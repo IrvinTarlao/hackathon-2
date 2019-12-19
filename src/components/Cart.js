@@ -90,7 +90,7 @@ class Cart extends Component {
 
                     </div>
                     <Button 
-                        style={{display: this.state.isClicked ? "none" : "block", position:"absolute", bottom:"20px", right:"20px", backgroundColor:"#076BD9", borderRadius:"30px", padding:"10px 20px", color:"white", outline:"none"}} 
+                        style={{display: this.state.isClicked || activities.length === 0 ? "none" : "block", position:"absolute", bottom:"20px", right:"20px", backgroundColor:"#076BD9", borderRadius:"30px", padding:"10px 20px", color:"white", outline:"none"}} 
                         onClick={()=>this.setState({
                             isClicked:true
                         })}
