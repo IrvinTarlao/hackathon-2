@@ -17,8 +17,6 @@ const Search = (props) => {
   const { activities, filtre, dispatch } = props;
   const [search, setSearch] = useState('')
   const [ newFilter, setNewFilter ] = useState(activities.filter(item=>item.activity_title.includes(search)));
-  // const { activities, dispatch } = props;
-  // const [ newFilter, setNewFilter ] = useState(activities);
   
   const handleChange = (event) => {
     event.preventDefault()
