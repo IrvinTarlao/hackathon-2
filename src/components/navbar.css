@@ -1,3 +1,17 @@
+.cart {
+    margin: 0 1vw;
+    padding: 0 20px;
+}
+
+.cartcontainer {
+    margin: 0 0 0 1vw;
+    background-color: rgba(91, 210, 255, 1);
+}
+
+.cartcontainer:hover {  
+    background-color: white;
+}
+
 .navlink {
     color: white;
     margin: 0 1vw;
