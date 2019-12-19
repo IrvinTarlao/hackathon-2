@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import './modalActivity.css';
 import {
-    Container,
-    Row,
-    Col,
-    Card,
-    CardImg,
-    CardText,
-    CardBody,
-    CardTitle,
-    CardSubtitle,
     Button,
     Jumbotron,
 } from "reactstrap";
+import {connect} from 'react-redux';
+import {isSelected} from '../actions';
+
+
 
 class ModalActivity extends Component {
     constructor(props) {
@@ -23,7 +18,6 @@ class ModalActivity extends Component {
 
     render() {
         const { showModalActivity, activity } = this.props;
-        console.log(this.props)
         return (
             <>
                 <div className="firstModalActivity" style={{ display: showModalActivity ? "flex" : "none" }} onClick={() => this.props.closeModal()}></div>
@@ -45,7 +39,7 @@ class ModalActivity extends Component {
                                 <p>citia, veteribus sint anteponendi, ut equis vetulis teneros anteponere solemus. Indigna homine dubitatio! Non enim debent esse amicitiarum sicut aliarum rerum satietates; veterrima quaeque, ut ea vina, quae vetustatem ferunt, esse debet suavissima; verumque illud est, quod dicitur, multos modios salis simul edendos esse, ut amicitiae munus expletu</p>
                             </Jumbotron>
                         </div>
-                     
+                        <Button color="primary" size="lg" style={{marginTop: "2vh"}} onClick={()=>{this.props.isSelected(activity)}}>Mettre dans le panier</Button>
                     </aside> : null
                 }
             </>
@@ -53,4 +47,8 @@ class ModalActivity extends Component {
     }
 }
 
-export default ModalActivity;
+const mdtp = dispatch => ({
+    isSelected : activity => dispatch(isSelected(activity)),
+})
+
+export default connect(null,mdtp)(ModalActivity);

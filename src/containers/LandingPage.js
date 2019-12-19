@@ -31,6 +31,7 @@ class LandingPage extends Component {
 
 
   render() {
+
     const activitiesLp = [
       this.props.activities[
         Math.floor(Math.random() * this.props.activities.length)
@@ -136,6 +137,7 @@ class LandingPage extends Component {
 }
 
 function mapState(state) {
+  console.log(state);    
   return { activities: state.activities };
 }
 

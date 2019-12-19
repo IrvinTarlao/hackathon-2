@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ModalActivity from './ModalActivity';
+import ModalActivity from '../containers/ModalActivity';
 import {
     Button
   } from "reactstrap";
