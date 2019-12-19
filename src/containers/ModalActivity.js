@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import './modalActivity.css';
 import {
-    Container,
-    Row,
-    Col,
-    Card,
-    CardImg,
-    CardText,
-    CardBody,
-    CardTitle,
-    CardSubtitle,
     Button,
     Jumbotron,
 } from "reactstrap";
+import {connect} from 'react-redux';
+import {isSelected} from '../actions';
+
+
 
 class ModalActivity extends Component {
     constructor(props) {
@@ -20,10 +15,14 @@ class ModalActivity extends Component {
         this.state = {};
     }
 
+    selectedActivityAndCloseModal= () =>{
+        const { activity } = this.props;
+        this.props.isSelected(activity);
+        this.props.closeModal();
+    }
 
     render() {
         const { showModalActivity, activity } = this.props;
-        console.log(this.props)
         return (
             <>
                 <div className="firstModalActivity" style={{ display: showModalActivity ? "flex" : "none" }} onClick={() => this.props.closeModal()}></div>
@@ -41,11 +40,9 @@ class ModalActivity extends Component {
                                 <h5>Cette activité se situe à {activity.location}</h5>
                                 <p>Lors de cet atelier avec {activity.first_name} {activity.last_name} de {activity.activity_duration} heure(s), vous aurez l'occasion de passer un moment en famille tout en vous cultivant. Pour pouvoir profiter pleinement de ce moment, cette activités vous est conseillée pour des enfants âgés de {activity.activity_age_min} à {activity.activity_age_max} ans.
                                 </p>
-                                <h5>Déroulement de l'atelier :</h5>
-                                <p>citia, veteribus sint anteponendi, ut equis vetulis teneros anteponere solemus. Indigna homine dubitatio! Non enim debent esse amicitiarum sicut aliarum rerum satietates; veterrima quaeque, ut ea vina, quae vetustatem ferunt, esse debet suavissima; verumque illud est, quod dicitur, multos modios salis simul edendos esse, ut amicitiae munus expletu</p>
                             </Jumbotron>
                         </div>
-                     
+                        <Button color="primary" size="lg" style={{marginTop: "2vh"}} onClick={this.selectedActivityAndCloseModal}>Sélectionner cette activité</Button>
                     </aside> : null
                 }
             </>
@@ -53,4 +50,8 @@ class ModalActivity extends Component {
     }
 }
 
-export default ModalActivity;
+const mdtp = dispatch => ({
+    isSelected : activity => dispatch(isSelected(activity)),
+})
+
+export default connect(null,mdtp)(ModalActivity);

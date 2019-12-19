@@ -5,3 +5,12 @@
 //         payload :  la_donnée_qui_nous_intéresse
 //     }
 // }
+
+export function isSelected(activity){
+    console.log(activity);
+    return {
+        type  :  'IS_SELECTED',
+        payload :  activity,
+
+    }
+}

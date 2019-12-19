@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route path="/search" component={Search}></Route>
           <Route exact path="/" component={LandingPage}></Route>
-          <Route path="/concept" component={Concept}></Route>
+          <Route path="/Concept" component={Concept}></Route>
           {/* <Route path="/cart" component={Cart}></Route>         */}
           <Route path="/newactivity" component={NewActivity}></Route>
         </Switch> 
