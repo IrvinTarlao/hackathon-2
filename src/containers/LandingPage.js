@@ -23,7 +23,10 @@ import { faCoins } from "@fortawesome/free-solid-svg-icons";
 class LandingPage extends Component {
   constructor(props) {
     super(props);
+    this.state = {}
   }
+
+
 
   render() {
     const activitiesLp = [
@@ -89,7 +92,7 @@ class LandingPage extends Component {
                           <FontAwesomeIcon icon={faCoins} />
                           &nbsp;{activity.price} euros
                         </CardText>
-                        <Button>En savoir plus</Button>
+                        <ButtonOpenModal activity={activity}/>
                       </CardBody>
                     </Card>
                   </div>

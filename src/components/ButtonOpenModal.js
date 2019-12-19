@@ -7,6 +7,7 @@ class ButtonOpenModal extends Component {
         super(props);
         this.state= {
             showModal: false,
+            selectedActivity: {},
         };
     }
 
@@ -36,7 +37,7 @@ class ButtonOpenModal extends Component {
         return(
             <div className="SectionContainer">
                 <button className="button" onClick={this.openModal}>En savoir plus</button>
-                <Modal showModal={this.state.showModal} closeModal={this.closeModal} />
+                <Modal showModal={this.state.showModal} closeModal={this.closeModal} activity={this.props.activity}/>
             </div>
         )
     }
