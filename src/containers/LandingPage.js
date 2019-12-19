@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 import {
   Container,
@@ -12,7 +13,7 @@ import {
   CardSubtitle,
   Button
 } from "reactstrap";
-import ButtonOpenModalActivity from '../components/ButtonOpenModalActivity'
+import NavBar from '../components/NavBar'
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -43,6 +44,7 @@ class LandingPage extends Component {
 
     return (
       <div className="landingPage">
+        <NavBar/>
         <div className="lpsection-home">
           <Container>
             <Row>
@@ -120,7 +122,7 @@ class LandingPage extends Component {
                     sur palette ? Vous souhaitez proposer un atelier pour les
                     enfants, avec ou sans leurs parents ? {" "}
                   </p>
-                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}>En voiture Simone !</Button>
+                  <Button color="primary" size="lg" style={{marginTop: "2vh"}}><NavLink className="navlink" to={"/newactivity"}>En voiture Simone !</NavLink></Button>
                 </div>
               </Col>
               <Col sm="12" md="6"></Col>

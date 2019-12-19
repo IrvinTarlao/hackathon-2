@@ -1,3 +1,16 @@
+/* SEARCH PAGE */
+.search {
+  font-size: 0.8em;
+}
+.search button {
+  font-size:1em;
+  position: absolute;
+  bottom: 0.5em;
+  right: 1.5em;
+}
+.search #div3 {
+  border-radius: 5px;
+}
 /* GENERAL */
 .main-title{
   font-size: 5em;
@@ -18,6 +31,9 @@
   padding: 2vh 2vw;
   color: black;
   border-radius: 5px;
+  -webkit-box-shadow: 10px 6px 61px -2px rgba(0,0,0,0.69);
+-moz-box-shadow: 10px 6px 61px -2px rgba(0,0,0,0.69);
+box-shadow: 10px 6px 61px -2px rgba(0,0,0,0.69);
 }
 
 
@@ -35,9 +51,8 @@
   justify-content: space-around;
   padding: 5vh 5vw;
   background-attachment: fixed;
+
 }
-
-
 
 .lpsection-examples {
   width:100vw;
@@ -50,6 +65,9 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 5vh 5vw;
+  -webkit-box-shadow: 0px 0px 145px 84px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 145px 84px rgba(0,0,0,1);
+box-shadow: 0px 0px 145px 84px rgba(0,0,0,1);
 }
 
 .lpsection-examples h2 {
@@ -77,21 +95,64 @@
   color: white;
 }
 
+/*Form*/
+
+.newActivityContainer{
+  min-height: 100vh;
+  width:100vw;
+  background-image:url("./img/lp-section3.jpg");
+  background-position: top;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.newActivityForm {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  top: 80px;
+  color: aliceblue;
+}
+
+.newActivityID{
+  background-color: rgba(59, 59, 59, 0.95);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px;
+  -webkit-box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
+-moz-box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
+box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
+}
+
+.newActivityDescription {
+  background-color:  rgba(59, 59, 59, 0.95);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px;
+  -webkit-box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
+-moz-box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
+box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
+}
+
+.lp-fond-txt{
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2vh 2vw;
+  color: black;
+  border-radius: 5px;
+}
 /* .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -102,11 +163,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -115,3 +174,4 @@
     transform: rotate(360deg);
   }
 } */
+

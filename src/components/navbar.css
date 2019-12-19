@@ -1,0 +1,77 @@
+.cart {
+    margin: 0 1vw;
+    padding: 0 20px;
+}
+
+.cartcontainer {
+    margin: 0 0 0 1vw;
+    background-color: rgba(91, 210, 255, 1);
+}
+
+.cartcontainer:hover {  
+    background-color: white;
+}
+
+.navlink {
+    color: white;
+    margin: 0 1vw;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.navlink2 {
+    color: white;
+    margin: 0 1vw;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.logo {
+    color: #525252;
+    margin: 0 1vw;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.navlink:hover {  
+    text-decoration: none;
+	animation: color 0.5s 1 both;
+}
+
+.navlink2:hover {  
+    text-decoration: none;
+	animation: color3 0.5s 1 both;
+}
+
+.logo:hover {  
+    text-decoration: none;
+	animation: color2 0.5s 1 both;
+}
+
+@keyframes color {
+    0% { 
+        color: white;
+    }
+    100% {
+        color: #5BD2FF;
+    }
+}
+
+@keyframes color2 {
+    0% { 
+        color: #525252;
+    }
+    100% {
+        color: #5BD2FF;
+    }
+}
+
+@keyframes color3 {
+    0% { 
+        color: white;
+    }
+    100% {
+        color: #525252;
+    }
+}
+
