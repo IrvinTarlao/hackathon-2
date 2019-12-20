@@ -53,7 +53,7 @@ const Map = (props) => {
                         <h3 style={{ fontWeight: "bold", fontSize: "1.3em", color: "#646464" }}>{selectedActivity.first_name}</h3>
                         <p>durée : {selectedActivity.activity_duration}h</p>
                         <p>âge : {selectedActivity.activity_age_min} - {selectedActivity.activity_age_max}</p>
-                        <Button style={{ width: "180px", height: "35px", backgroundColor: "#21FF93", borderRadius: "30px", border: "2px solid #21FF93", color: "#646464", outline: "none", fontWeight: "bold", fontSize: "1em" }}>Choisir cette activité</Button>
+                        {/* <Button style={{ width: "180px", height: "35px", backgroundColor: "#21FF93", borderRadius: "30px", border: "2px solid #21FF93", color: "#646464", outline: "none", fontWeight: "bold", fontSize: "1em" }}>Choisir cette activité</Button> */}
                     </div>
                 </InfoWindow>
             )}
