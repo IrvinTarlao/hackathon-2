@@ -71,11 +71,11 @@ const NewActivity = ({ activities, dispatch }) => {
     return (
         <div className="newActivityContainer">
             <NavBar />
-            <div className='newActivityForm' style={{ display: resum ? 'none' : 'block' }}>
-                <Form onSubmit={submitForm}>
-                    <FormGroup row>
+            <div className='newActivityForm' style={{ display: resum ? 'none' : 'block'}}>
+                <Form onSubmit={submitForm} >
+                    <FormGroup row >
                         <Col lg={{ size: 4, offset: 1 }} sm={12}>
-                            <div className="newActivityID">
+                            <div className="newActivityID" style={{ width:"30vw", position:"absolute", left:"-30vw"}}>
                                 <FormGroup row>
                                     <Label for="last_name" sm={2}>Nom</Label>
                                     <Col sm={10}>
@@ -115,7 +115,7 @@ const NewActivity = ({ activities, dispatch }) => {
                             </div>
                         </Col>
                         <Col lg={6} sm={12}>
-                            <div className="newActivityDescription">
+                            <div className="newActivityDescription" style={{ width:"40vw", position:"absolute", left:"2vw"}}>
                                 <FormGroup row>
                                     <Label for="activity_title" sm={2}>Titre</Label>
                                     <Col sm={10}>

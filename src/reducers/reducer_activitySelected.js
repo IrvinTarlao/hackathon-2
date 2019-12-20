@@ -4,6 +4,8 @@ export default  function reducer_activitySelected(state = initState.activitySele
     switch(action.type){
             case 'IS_SELECTED' :
                 return [...state, action.payload];
+            case 'DELETE' :
+                return [];
             default : 
                 return state;
         }

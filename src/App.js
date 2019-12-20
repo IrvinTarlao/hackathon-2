@@ -5,6 +5,7 @@ import LandingPage from "./containers/LandingPage";
 import Concept from './components/Concept'
 import './App.css';
 import NewActivity from './containers/NewActivity';
+import Cart from './components/Cart'
 // import Cart from './containers/Home';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Route path="/search" component={Search}></Route>
           <Route exact path="/" component={LandingPage}></Route>
           <Route path="/Concept" component={Concept}></Route>
-          {/* <Route path="/cart" component={Cart}></Route>         */}
+          <Route path="/cart" component={Cart}></Route>        
           <Route path="/newactivity" component={NewActivity}></Route>
         </Switch> 
      </HashRouter>
