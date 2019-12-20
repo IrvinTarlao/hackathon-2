@@ -20,7 +20,7 @@ const Nav2 = (props) => {
     <div>
         <Navbar className="nav" light expand="md" style={{backgroundColor:"transparent", position: "fixed", right:0, justifyContent:"flex-end", outline:"none", zIndex:5}}>
         <h1 className='main-title' style={{position:"fixed", fontSize: "3em", left:"15px", zIndex:1}}>
-          <NavLink className="logo" to={"/"}>KidDo</NavLink>
+          <NavLink className="logo" to={"/"} style={{color:'0069d9'}}>Kid<span style={{color:'e02526'}}>Do</span></NavLink>
         </h1>
         
         <NavbarToggler onClick={toggle} style={{border: "2px solid white", right:"0", backgroundColor:"#5BD2FF"}}/>
