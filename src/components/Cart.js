@@ -5,6 +5,7 @@ import { Row, Col } from 'reactstrap';
 import { connect } from 'react-redux';
 import Payment from './Payment';
 import { NavLink } from "react-router-dom";
+import deleteCart from '../actions';
 
 
 class Cart extends Component {
@@ -18,7 +19,7 @@ class Cart extends Component {
     render() {
 
     
-    const { activities } = this.props;
+    const { activities, dispatch } = this.props;
 
     const priceSum = () => {
         let sum = 0;
@@ -90,11 +91,15 @@ class Cart extends Component {
 
                     </div>
                     <Button 
-                        style={{display: this.state.isClicked || activities.length === 0 ? "none" : "block", position:"absolute", bottom:"20px", right:"20px", backgroundColor:"#076BD9", borderRadius:"30px", padding:"10px 20px", color:"white", outline:"none"}} 
+                        style={{display: this.state.isClicked || activities.length === 0 ? "none" : "block", position:"absolute", bottom:"20px", right:"50px", backgroundColor:"#076BD9", borderRadius:"30px", padding:"10px 20px", color:"white", outline:"none"}} 
                         onClick={()=>this.setState({
                             isClicked:true
                         })}
                     >Paiement</Button>
+                    <Button 
+                        style={{display: this.state.isClicked || activities.length === 0 ? "none" : "block", position:"absolute", bottom:"20px", right:"220px", backgroundColor:"rgba(91, 210, 255, 1)", border:"1px solid rgba(91, 210, 255, 1)", borderRadius:"30px", padding:"10px 20px", color:"white", outline:"none"}} 
+                        onClick={()=>dispatch({type: "DELETE"})}
+                    >Vider le panier</Button>
 
                 </div>
             </div>
@@ -108,5 +113,8 @@ class Cart extends Component {
 const mapStateToProps = state => ({
     activities: state.activitySelected,
   });
+// const mapDispatchToProps = state => ({
+//     deletedActivities: state.activitySelected,
+//   });
   
 export default connect(mapStateToProps)(Cart);

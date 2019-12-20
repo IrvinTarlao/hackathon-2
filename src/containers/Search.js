@@ -70,10 +70,10 @@ const Search = (props) => {
     <NavBar/>
       <div className="search"> 
         <Container fluid id="input_search">
-          <Row className="mx-auto mt-3" >
+          <Row className="mx-auto mt-12" >
             <Col className="col-12">
-              <Form >
-                <FormGroup >
+              
+                
                   <Input 
                     onChange={handleChange}
                     value={search}
@@ -82,8 +82,8 @@ const Search = (props) => {
                     id="exampleSearch"
                     placeholder="Tapez un truc... mais pas un enfant !"
                   />
-                </FormGroup>
-              </Form>
+                
+              
             </Col>
           </Row>
         </Container>   
