@@ -47,13 +47,13 @@ const Map = (props) => {
                     style={{ backgroundColor: "red" }}
                 >
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "200px", textAlign: "center" }}>
-                        <h2 style={{ fontWeight: "bold", fontSize: "1.6em", color: "#646464" }}>{selectedActivity.activity_title} avec :</h2>
+                        <h2 style={{ fontWeight: "bold", fontSize: "1.6em", color: "#646464" }}>{selectedActivity.activity_title}</h2>
 
                         <img src={selectedActivity.avatar} style={{ width: "100%" }} alt={selectedActivity.avatar}></img>
-                        <h3 style={{ fontWeight: "bold", fontSize: "1.3em", color: "#646464" }}>{selectedActivity.first_name}</h3>
+                        <h3 style={{ fontWeight: "bold", fontSize: "1.3em", color: "#646464" }}>avec&nbsp;{selectedActivity.first_name}</h3>
                         <p>durée : {selectedActivity.activity_duration}h</p>
-                        <p>âge : {selectedActivity.activity_age_min} - {selectedActivity.activity_age_max}</p>
-                        <Button style={{ width: "180px", height: "35px", backgroundColor: "#21FF93", borderRadius: "30px", border: "2px solid #21FF93", color: "#646464", outline: "none", fontWeight: "bold", fontSize: "1em" }}>Choisir cette activité</Button>
+                        <p>âge : {selectedActivity.activity_age_min} - {selectedActivity.activity_age_max}&nbsp;ans</p>
+                        {/* <Button style={{ width: "180px", height: "35px", backgroundColor: "#21FF93", borderRadius: "30px", border: "2px solid #21FF93", color: "#646464", outline: "none", fontWeight: "bold", fontSize: "1em" }}>Choisir cette activité</Button> */}
                     </div>
                 </InfoWindow>
             )}

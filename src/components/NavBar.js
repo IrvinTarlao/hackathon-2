@@ -44,7 +44,7 @@ const Nav2 = (props) => {
                 <NavLink className="cart" to={"/Cart"}>
                   <div style={{display:"flex", flexFlow:"row"}}>
                     <img src="/cart.png" alt="cart" style={{ height:"27px"}}></img>
-                    <p style={{color:"green", fontWeight:"bold"}}>{props.activitySelected.length}</p>
+                    <p className="notif" style={{color:"grey", fontWeight:"bold"}}>{props.activitySelected.length}</p>
                   </div>
                 </NavLink>
               </Li>

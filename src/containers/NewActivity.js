@@ -52,7 +52,7 @@ const NewActivity = ({ activities, dispatch }) => {
             "latitude": "45.7463242",
             "location": data.filter(item => item[0] === 'location')[0][1],
             "activity_title": data.filter(item => item[0] === 'activity_title')[0][1],
-            "activity_picture": 'https://images.unsplash.com/photo-1465808883813-7d2959af2252?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+            "activity_picture": 'https://images.unsplash.com/photo-1562245376-3f9dae9f0e73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
             "activity_duration": parseInt(data.filter(item => item[0] === 'activity_duration')[0][1]),
             "activity_age_min": parseInt(data.filter(item => item[0] === 'activity_age_min')[0][1]),
             "activity_age_max": parseInt(data.filter(item => item[0] === 'activity_age_max')[0][1]),
