@@ -115,7 +115,7 @@ const NewActivity = ({ activities, dispatch }) => {
                             </div>
                         </Col>
                         <Col lg={6} sm={12}>
-                            <div className="newActivityDescription" style={{ width:"40vw", position:"absolute", left:"5vw"}}>
+                            <div className="newActivityDescription" style={{ width:"40vw", position:"absolute", left:"2vw"}}>
                                 <FormGroup row>
                                     <Label for="activity_title" sm={2}>Titre</Label>
                                     <Col sm={10}>
