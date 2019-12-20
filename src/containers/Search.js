@@ -41,7 +41,7 @@ const Search = (props) => {
               <CardTitle  className="pt-2"><h5>{item.activity_title}</h5></CardTitle>
               <CardSubtitle className="p-0"><h6>avec {item.first_name}</h6></CardSubtitle>
               <CardText className="pb-2">
-                <em>{item.category}</em><br />
+                <em>{item.category}</em><br /><br />
                 <tbody>
                   <tr>
                     <td>
@@ -91,14 +91,14 @@ const Search = (props) => {
           <Row className="mx-auto mt-3" >
             <Col className="col-12" id="test">
               <Row >
-                <Col className="col-6 md-6" >
+                <Col className="col-5" >
                   <DisplayCards newFilter={newFilter}/>
                 </Col>
-                <Col className="col-6" >
+                <Col className="col-7">
                   <Map
                     googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBrWwzj5tzzX9MpBFXqfkKjzFYZIoGUuwI`}
                     loadingElement={<div id="div1" style={{ height: `100%` }} />}
-                    containerElement={<div id="div2" style={{ height: `80%`, position:"fixed", bottom:"10px", right:"10px", width: "49vw", zIndex:"1"}} />}
+                    containerElement={<div id="div2" style={{ height: `80%`, position:"fixed", bottom:"10px", right:"10px", width: "57vw", zIndex:"1"}} />}
                     mapElement={<div id="div3" style={{ height: `100%` }} />}
                     activities={newFilter}
                   />

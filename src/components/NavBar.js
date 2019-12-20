@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import { connect } from "react-redux";
 import React, { useState } from 'react';
 import {
   Collapse,
@@ -41,7 +41,13 @@ const Nav2 = (props) => {
             </NavItem>            
             <NavItem>
               <Li className="cartcontainer" style={{color: "white", textAlign:"right", height:"40px"}}>
-              <NavLink className="cart" to={"/Cart"}><img src="/cart.png" alt="cart" style={{ height:"27px"}}></img></NavLink></Li>
+                <NavLink className="cart" to={"/Cart"}>
+                  <div style={{display:"flex", flexFlow:"row"}}>
+                    <img src="/cart.png" alt="cart" style={{ height:"27px"}}></img>
+                    <p style={{color:"green", fontWeight:"bold"}}>{props.activitySelected.length}</p>
+                  </div>
+                </NavLink>
+              </Li>
             </NavItem>            
             
           </Nav>
@@ -51,5 +57,11 @@ const Nav2 = (props) => {
   );
 }
 
-export default Nav2;
+
+function mstp(state) {
+  console.log(state);    
+  return { activitySelected: state.activitySelected };
+}
+
+export default connect(mstp)(Nav2);
       
