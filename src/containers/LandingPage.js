@@ -13,7 +13,7 @@ import {
   CardSubtitle,
   Button
 } from "reactstrap";
-import NavBar from '../components/NavBar'
+import NavBar from '../components/NavBarLp'
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";

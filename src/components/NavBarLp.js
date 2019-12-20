@@ -19,10 +19,7 @@ const Nav2 = (props) => {
   return (
     <div>
         <Navbar className="nav" light expand="md" style={{backgroundColor:"transparent", position: "fixed", right:0, justifyContent:"flex-end", outline:"none", zIndex:5}}>
-        <h1 className='main-title' style={{position:"fixed", fontSize: "3em", left:"15px", zIndex:1}}>
-          <NavLink className="logo" to={"/"}>KidDo</NavLink>
-        </h1>
-        
+                
         <NavbarToggler onClick={toggle} style={{border: "2px solid white", right:"0", backgroundColor:"#5BD2FF"}}/>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar >
@@ -44,7 +41,7 @@ const Nav2 = (props) => {
                 <NavLink className="cart" to={"/Cart"}>
                   <div style={{display:"flex", flexFlow:"row"}}>
                     <img src="/cart.png" alt="cart" style={{ height:"27px"}}></img>
-                    <p className="notif" style={{color:"grey", fontWeight:"bold"}}>{props.activitySelected.length}</p>
+                    <p style={{color:"green", fontWeight:"bold"}}>{props.activitySelected.length}</p>
                   </div>
                 </NavLink>
               </Li>

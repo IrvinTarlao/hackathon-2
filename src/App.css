@@ -45,6 +45,7 @@
 .main-title{
   font-size: 5em;
   font-family: 'Lilita One', cursive;
+  color: #667432;
 }
 
 .second-title{
@@ -228,12 +229,6 @@ box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
 box-shadow: 32px 33px 37px 0px rgba(0,0,0,0.22);
 }
 
-.lp-fond-txt{
-  background-color: rgba(255, 255, 255, 0.4);
-  padding: 2vh 2vw;
-  color: black;
-  border-radius: 5px;
-}
 
 
 /*CONCEPT */

@@ -52,7 +52,7 @@ const NewActivity = ({ activities, dispatch }) => {
             "latitude": "45.7463242",
             "location": data.filter(item => item[0] === 'location')[0][1],
             "activity_title": data.filter(item => item[0] === 'activity_title')[0][1],
-            "activity_picture": 'https://images.unsplash.com/photo-1465808883813-7d2959af2252?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+            "activity_picture": 'https://images.unsplash.com/photo-1562245376-3f9dae9f0e73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
             "activity_duration": parseInt(data.filter(item => item[0] === 'activity_duration')[0][1]),
             "activity_age_min": parseInt(data.filter(item => item[0] === 'activity_age_min')[0][1]),
             "activity_age_max": parseInt(data.filter(item => item[0] === 'activity_age_max')[0][1]),
@@ -71,11 +71,11 @@ const NewActivity = ({ activities, dispatch }) => {
     return (
         <div className="newActivityContainer">
             <NavBar />
-            <div className='newActivityForm' style={{ display: resum ? 'none' : 'block' }}>
-                <Form onSubmit={submitForm}>
-                    <FormGroup row>
+            <div className='newActivityForm' style={{ display: resum ? 'none' : 'block'}}>
+                <Form onSubmit={submitForm} >
+                    <FormGroup row >
                         <Col lg={{ size: 4, offset: 1 }} sm={12}>
-                            <div className="newActivityID">
+                            <div className="newActivityID" style={{ width:"30vw", position:"absolute", left:"-30vw"}}>
                                 <FormGroup row>
                                     <Label for="last_name" sm={2}>Nom</Label>
                                     <Col sm={10}>
@@ -115,7 +115,7 @@ const NewActivity = ({ activities, dispatch }) => {
                             </div>
                         </Col>
                         <Col lg={6} sm={12}>
-                            <div className="newActivityDescription">
+                            <div className="newActivityDescription" style={{ width:"40vw", position:"absolute", left:"2vw"}}>
                                 <FormGroup row>
                                     <Label for="activity_title" sm={2}>Titre</Label>
                                     <Col sm={10}>
