@@ -52,9 +52,9 @@ class LandingPage extends Component {
             <Row key={Math.random()}>
               <Col key={Math.random()}>
                 <div className="lp-fond-txt" key={Math.random()}>
-                  <h1 className='main-title'>KidDo</h1>
-                  <h3 className='second-title'>Mon cadeau ? </h3>
-                  <h3 className='second-title'>C moa ki la fé !</h3>
+                  <h1 className='main-title'>Kid<span className='main-title-orange'>Do</span></h1>
+                  <h3 className='second-title' style={{color:'#484c54'}}>Mon cadeau ? <br/>
+                  C moa ki la fé !</h3>
                   <Button color="primary" size="lg" style={{marginTop: "2vh"}}><NavLink className="navlink" to={"/Search"}>Découvrir nos activités !</NavLink></Button>
                 </div>
               </Col>
@@ -65,7 +65,7 @@ class LandingPage extends Component {
         <div className="lpsection-examples" key={Math.random()}>
           <Container key={Math.random()}>
         <div className="lp-fond-txt" key={Math.random()}>
-        <h2 className="second-title">Venez en prendre plein les mirettes</h2>
+        <h2 className="second-title" style={{color:'#484c54'}}>Venez en prendre plein les mirettes</h2>
           </div>
             <Row key={Math.random()}>
               {activitiesLp.map((activity, index) => (
@@ -117,7 +117,7 @@ class LandingPage extends Component {
             <Row key={Math.random()}>
               <Col sm="12" md="6" key={Math.random()}>
                 <div className="lp-fond-txt" key={Math.random()}>
-                  <h2 className="second-title">Proposez votre activité</h2>
+                  <h2 className="second-title" style={{textAlign:'left'}}>Proposez votre activité</h2>
                   <p style={{marginTop:"2vh"}}>
                     Vous avez un talent particulier pour la couture, la
                     programmation, l'ébénisterie, la peinture, la pirogravure
