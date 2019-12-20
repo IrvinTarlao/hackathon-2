@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import '../App.css';
 import './modalActivity.css';
 import NavBar from '../components/NavBar'
-import { Col, Button, Form, FormGroup, Label, Input, CustomInput, CardText, Jumbotron } from 'reactstrap';
+import { Container, Row,Col, Button, Form, FormGroup, Label, Input, CustomInput, CardText, Jumbotron } from 'reactstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
@@ -71,11 +71,14 @@ const NewActivity = ({ activities, dispatch }) => {
     return (
         <div className="newActivityContainer">
             <NavBar />
+      
             <div className='newActivityForm' style={{ display: resum ? 'none' : 'block'}}>
+               
                 <Form onSubmit={submitForm} >
                     <FormGroup row >
                         <Col lg={{ size: 4, offset: 1 }} sm={12}>
                             <div className="newActivityID" style={{ width:"30vw", position:"absolute", left:"-30vw"}}>
+                  <h2 className="second-title" style={{textAlign:'left'}}>Qui êtes vous ? </h2>
                                 <FormGroup row>
                                     <Label for="last_name" sm={2}>Nom</Label>
                                     <Col sm={10}>
@@ -117,7 +120,8 @@ const NewActivity = ({ activities, dispatch }) => {
                         <Col lg={6} sm={12}>
                             <div className="newActivityDescription" style={{ width:"40vw", position:"absolute", left:"2vw"}}>
                                 <FormGroup row>
-                                    <Label for="activity_title" sm={2}>Titre</Label>
+                                <h2 className="second-title" style={{textAlign:'left'}}>Que proposez-vous ? </h2>
+
                                     <Col sm={10}>
                                         <Input type="text" name="activity_title" id="activity_title" placeholder="" />
                                     </Col>

@@ -34,7 +34,8 @@ const Search = (props) => {
           <Col className="col" >
             <CardImg className="m-1"
               src={item.avatar}
-              alt="Card image cap" />
+              alt="Card image cap" 
+              />
           </Col>
           <Col className="col-8">
             <CardBody className="p-0">
