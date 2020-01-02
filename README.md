@@ -24,15 +24,14 @@
 <p>- une page panier permettant le paiement</p>
 <br>
 <p align="center">
-  <img src="public/screenshot4.png" width="425" />
-  <img src="public/screenshot5.png" width="425" />
+  <kbd><img src="public/screenshot4.png" width="415" /></kbd>
+  <kbd><img src="public/screenshot5.png" width="415" /></kbd>
 </p>
 <br>
 
-<p align="center">
+<h3 align="center">
   Demo Live : https://hackathon-noel.netlify.com/#/
-</p>
-<br>
+</h3>
 <br>
 <p align="center">This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).</p>
 
