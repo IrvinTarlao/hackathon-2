@@ -2,17 +2,8 @@
 <p align="center">
   <img src="public/screenshot1.png" alt="Demo" width="800" />
 </p>
-<p align="center">
-  <img src="public/screenshot2.png" width="400" />
-  <img src="public/screenshot3.png" width="400" />
-</p>
-<p align="center">
-  <img src="public/screenshot4.png" width="400" />
-  <img src="public/screenshot5.png" width="400" />
-</p>
 
 <h1 align="center">KidDo</h1>
-# KidDo
 
 ## Hackathon de 48h - REACT - AGILE
 
@@ -23,12 +14,26 @@ Projet mené en méthodologie AGILE, avec :
 - utilisation de Router
 - une page de recherche, avec champs de recherche permettant de filtrer les résultats 
 - affichage d'une map (google maps) avec les points d’intérêts en fonction du résulat de la recherche
+
+<p align="center">
+  <img src="public/screenshot2.png" width="400" />
+  <img src="public/screenshot6.png" width="400" />
+</p>
+
 - possibilité de créer une nouvelle activité pour la faire apparaître dans la liste
 - possibilité de selectionner une ou plusieurs activités afin de les mettre dans le panier
 - une page panier permettant le paiement 
 
+<p align="center">
+  <img src="public/screenshot4.png" width="400" />
+  <img src="public/screenshot5.png" width="400" />
+</p>
 
-## Demo Live : https://hackathon-noel.netlify.com/#/
+## <p align="center">
+  Demo Live : https://hackathon-noel.netlify.com/#/
+</p>
+
+
 
 
 
