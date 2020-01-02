@@ -7,7 +7,7 @@
 
 <h2 align="center">Hackathon de 48h - REACT - AGILE</h2>
 
-<p>Réalisation d'une application web. Le principe est de permettre aux parents d'offrir la possibilité à leurs enfants de fabriquer, ou réparer eux-mêmes leurs jouets à partir de produits recyclés, afin de proposer une alternative vertueuse et responsable à la surconsommation et à la fabrication de jouets en plastiques venant des quatres coins du globe.</p>
+<p align="justify">Réalisation d'une application web. Le principe est de permettre aux parents d'offrir la possibilité à leurs enfants de fabriquer, ou réparer eux-mêmes leurs jouets à partir de produits recyclés, afin de proposer une alternative vertueuse et responsable à la surconsommation et à la fabrication de jouets en plastiques venant des quatres coins du globe.</p>
 
 <p>Projet mené en méthodologie AGILE, avec :<p>
 
