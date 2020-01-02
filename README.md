@@ -34,5 +34,5 @@
   Demo Live : https://hackathon-noel.netlify.com/#/
 </h3>
 <br>
-<p align="center">This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).</p>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
