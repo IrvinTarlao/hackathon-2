@@ -14,10 +14,9 @@
 <p>- utilisation de Router</p>
 <p>- une page de recherche, avec champs de recherche permettant de filtrer les résultats</p>
 <p>- affichage d'une map (google maps) avec les points d’intérêts en fonction du résulat de la recherche</p>
-<br>
 <p align="center">
   <kbd><img src="public/screenshot2.png" width="425" /></kbd>
-  <img src="public/screenshot6.png" width="425" />
+  <kbd><img src="public/screenshot6.png" width="425" /></kbd>
 </p>
 <br>
 <p>- possibilité de créer une nouvelle activité pour la faire apparaître dans la liste</p>
