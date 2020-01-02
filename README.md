@@ -16,8 +16,8 @@
 <p>- affichage d'une map (google maps) avec les points d’intérêts en fonction du résulat de la recherche</p>
 <br>
 <p align="center">
-  <img src="public/screenshot2.png" width="400" />
-  <img src="public/screenshot6.png" width="400" />
+  <img src="public/screenshot2.png" width="420" />
+  <img src="public/screenshot6.png" width="420" />
 </p>
 <br>
 <p>- possibilité de créer une nouvelle activité pour la faire apparaître dans la liste</p>
