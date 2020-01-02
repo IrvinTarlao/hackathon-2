@@ -7,7 +7,7 @@
   <img src="https://github.com/Olivier9925/Springfield-Vice/blob/master/Capture%20d%E2%80%99e%CC%81cran%202019-11-19%20a%CC%80%2022.09.41.png?raw=true" width="350" />
 </p>
 
-<h1 align="center>KidDo<h1>
+<h1 align="center>KidDo</h1>
 # KidDo
 
 ## Hackathon de 48h - REACT - AGILE
