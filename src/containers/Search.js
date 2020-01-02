@@ -97,7 +97,8 @@ const Search = (props) => {
                 </Col>
                 <Col className="col-7">
                   <Map
-                    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBrWwzj5tzzX9MpBFXqfkKjzFYZIoGUuwI`}
+                    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
+                    // &key=clé à remettre
                     loadingElement={<div id="div1" style={{ height: `100%` }} />}
                     containerElement={<div id="div2" style={{ height: `80%`, position:"fixed", bottom:"10px", right:"10px", width: "57vw", zIndex:"1"}} />}
                     mapElement={<div id="div3" style={{ height: `100%` }} />}
