@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="public/screenshot1.png" alt="Demo" width="800" />
+  <img src="public/screenshot1.png" alt="Demo" width="1000" />
 </p>
 
 <h1 align="center">KidDo</h1>
@@ -16,8 +16,8 @@
 <p>- affichage d'une map (google maps) avec les points d’intérêts en fonction du résulat de la recherche</p>
 <br>
 <p align="center">
-  <img src="public/screenshot2.png" width="400" />
-  <img src="public/screenshot6.png" width="400" />
+  <img src="public/screenshot2.png" width="500" />
+  <img src="public/screenshot6.png" width="500" />
 </p>
 <br>
 <p>- possibilité de créer une nouvelle activité pour la faire apparaître dans la liste</p>
@@ -25,8 +25,8 @@
 <p>- une page panier permettant le paiement</p>
 <br>
 <p align="center">
-  <img src="public/screenshot4.png" width="400" />
-  <img src="public/screenshot5.png" width="400" />
+  <img src="public/screenshot4.png" width="500" />
+  <img src="public/screenshot5.png" width="500" />
 </p>
 <br>
 
