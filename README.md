@@ -16,7 +16,7 @@
 <p>- affichage d'une map (google maps) avec les points d’intérêts en fonction du résulat de la recherche</p>
 <br>
 <p align="center">
-  <img src="public/screenshot2.png" width="425" border-width="20px"/>
+  <img src="public/screenshot2.png" width="425" />
   <img src="public/screenshot6.png" width="425" />
 </p>
 <br>
