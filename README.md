@@ -5,6 +5,8 @@
 
 <h1 align="center">KidDo</h1>
 
+<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
+
 <h2 align="center">Hackathon de 48h - REACT - AGILE</h2>
 
 <p align="justify">Réalisation d'une application web. Le principe est de permettre aux parents d'offrir la possibilité à leurs enfants de fabriquer, ou réparer eux-mêmes leurs jouets à partir de produits recyclés, afin de proposer une alternative vertueuse et responsable à la surconsommation et à la fabrication de jouets en plastiques venant des quatres coins du globe.</p>
@@ -14,6 +16,7 @@
 <p>- utilisation de Router</p>
 <p>- une page de recherche, avec champs de recherche permettant de filtrer les résultats</p>
 <p>- affichage d'une map (google maps) avec les points d’intérêts en fonction du résulat de la recherche</p>
+<br>
 <p align="center">
   <kbd><img src="public/screenshot2.png" width="415" /></kbd>
   <kbd><img src="public/screenshot6.png" width="415" /></kbd>
