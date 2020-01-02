@@ -3,8 +3,12 @@
   <img src="public/screenshot1.png" alt="Demo" width="800" />
 </p>
 <p align="center">
-  <img src="public/screenshot2.png" width="350" />
-  <img src="public/screenshot3.png" width="350" />
+  <img src="public/screenshot2.png" width="400" />
+  <img src="public/screenshot3.png" width="400" />
+</p>
+<p align="center">
+  <img src="public/screenshot4.png" width="400" />
+  <img src="public/screenshot5.png" width="400" />
 </p>
 
 <h1 align="center">KidDo</h1>
